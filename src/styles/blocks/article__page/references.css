@@ -1,0 +1,26 @@
+/* оформление списка литературы */
+
+.references__summary {
+  list-style: none; 
+  cursor: pointer;
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+
+.references__summary-subtitle {
+  margin-block-end: 0;
+}
+
+.references__list {
+  margin-block-start: 10px;
+  margin-inline-start: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.references__list-item {
+  font-size: 16px;
+  line-height: 132%;
+}

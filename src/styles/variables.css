@@ -1,0 +1,27 @@
+:root {
+  /* переменные, связанные с цветом */
+  --black: #000;
+  --green: #b4d93b;
+  --white: #fff;
+  --violet: #6200be;
+  --orange: #fd7f52;
+  --grey: rgba(0, 0, 0, 0.4);
+
+  /* переменные, связанные с текстом */
+  --main-font: 'Inter-Variable';
+  --main-text-color: var(--black, #000);
+  --path__link-text-color: var(--grey, rgba(0, 0, 0, 0.4));
+  --tag__link-text-color: var(--grey, rgba(0, 0, 0, 0.4));
+  --main-font-weight: 400;
+  --title-font-weight: 700;
+  --accent__section-text-color: var(--white, #fff);
+  --accent__section-bg-color: var(--orange, #fd7f52);
+  --bq-border-color: var(--green, #b4d93b);
+  --bq-source-color: var(--grey, rgba(0, 0, 0, 0.4));
+
+  /* переменные, связанные с цветами фонов блоков */
+  --bg-color: var(--white, #fff);
+  --header-bg-color: var(--green, #b4d93b);
+  --footer-bg-color: var(--green, #b4d93b);
+
+}

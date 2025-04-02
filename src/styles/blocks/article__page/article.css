@@ -1,0 +1,13 @@
+/* оформление структуры статьи */
+
+.content {
+  padding-inline: clamp(0.625rem, -0.0893rem + 3.5714vw, 3.125rem);
+  max-width: 1440px;
+  justify-self: center;
+}
+
+.article_layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: clamp(4.375rem, -8.75rem + 27.3438vw, 8.75rem);
+}
