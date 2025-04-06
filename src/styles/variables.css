@@ -5,23 +5,29 @@
   --white: #fff;
   --violet: #6200be;
   --orange: #fd7f52;
-  --grey: rgba(0, 0, 0, 0.4);
+  --grey: rgba(0, 0, 0, 0.6);
 
   /* переменные, связанные с текстом */
   --main-font: 'Inter-Variable';
   --main-text-color: var(--black, #000);
-  --path__link-text-color: var(--grey, rgba(0, 0, 0, 0.4));
-  --tag__link-text-color: var(--grey, rgba(0, 0, 0, 0.4));
+  --path__link-text-color: var(--grey, rgba(0, 0, 0, 0.6));
+  --tag__link-text-color: var(--grey, rgba(0, 0, 0, 0.6));
   --main-font-weight: 400;
   --title-font-weight: 700;
   --accent__section-text-color: var(--white, #fff);
   --accent__section-bg-color: var(--orange, #fd7f52);
   --bq-border-color: var(--green, #b4d93b);
-  --bq-source-color: var(--grey, rgba(0, 0, 0, 0.4));
+  --p-link-color: var(--violet, #6200be);
+  --bq-source-color: var(--grey, rgba(0, 0, 0, 0.6));
 
   /* переменные, связанные с цветами фонов блоков */
   --bg-color: var(--white, #fff);
   --header-bg-color: var(--green, #b4d93b);
   --footer-bg-color: var(--green, #b4d93b);
+
+  /* переменные, связанные с цветами фонов разделов*/
+  --lexicon-bg-color: var(--green, #b4d93b);
+  --gramm_forms-bg-color: var(--orange, #fd7f52);
+  --syntax-bg-color: var(--violet, #6200be);
 
 }

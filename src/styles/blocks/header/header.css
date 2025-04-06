@@ -9,9 +9,6 @@
   padding-block: 14px;
   padding-inline-start: clamp(0.625rem, -0.0893rem + 3.5714vw, 3.125rem);
   padding-inline-end: clamp(0.3125rem, 0.0446rem + 1.3393vw, 1.25rem);
-  position: sticky;
-  top: 0px;
-  z-index: 1000; 
 }
 
 .project-title {

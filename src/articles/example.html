@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/variables.css" />
     <link rel="stylesheet" href="../styles/globals.css" />
     <link rel="stylesheet" href="../styles/blocks/header/header.css" />
+    <link rel="stylesheet" href="../styles/blocks/content/content.css"/>
     <link rel="stylesheet" href="../styles/blocks/footer/footer.css" />
     <link rel="stylesheet" href="../styles/blocks/path/path.css" />
     <link rel="stylesheet" href="../styles/blocks/article__page/article.css" />
@@ -36,7 +37,7 @@
       <button class="header__button menu__button" type="button">
         <svg class="menu__icon"
         xmlns="http://www.w3.org/2000/svg" 
-        viewBow="0 0 45 45">
+        viewBox="0 0 45 45">
           <path d="M0 4.821h44V0H0v4.821ZM0 45h44v-4.821H0V45Zm0-20.09h44v-4.82H0v4.82Z"/>
         </svg>
       </button>
@@ -46,13 +47,13 @@
       <!-- путь до статьи -->
       <!-- добавить соответствующие ссылки -->
       <div class="path">
-        <a class="path__link" href="#">главная</a> 
-        <span class="path__link">&mdash;</span>
+        <a class="path__link" href="../index.html">главная</a> 
+        <span class="path__span">&mdash;</span>
         <a class="path__link" href="#">синтаксис</a>
-        <span class="path__link">&mdash;</span>
+        <span class="path__span">&mdash;</span>
         <a class="path__link" href="#">дискурсивные слова и коннекторы</a>
-        <span class="path__link">&mdash;</span>
-        <a class="path__link" href="#">статья</a>
+        <span class="path__span">&mdash;</span>
+        <a class="path__link path__current-link" href="#">статья</a>
       </div>
 
 
@@ -155,7 +156,7 @@
               </blockquote>
               <p class="text-section__paragraph">Резюмирование. «Кстати» может вводить мысль, содержащую уже упоминавшуюся в тексте информацию:</p>
               <blockquote class=paragraph__example>
-                <p class="paragraph__example-text">(5) Мама заранее договорилась с хозяйкой, и та обещала снять зимние груши Бера. <…> До сих пор вкус и запах груш вызывает в памяти этот рассказ о дружбе народов. Кстати, мы так и не узнали, кто же была по национальности та женщина из Гудаут.</p>
+                <p class="paragraph__example-text">(5) Мама заранее договорилась с хозяйкой, и та обещала снять зимние груши Бера. &lt;…&gt; До сих пор вкус и запах груш вызывает в памяти этот рассказ о дружбе народов. Кстати, мы так и не узнали, кто же была по национальности та женщина из Гудаут.</p>
                 <p class="paragraph__example-source">[Людмила Улицкая. Гудаутские груши, 2008]</p>
               </blockquote>
               <p class="text-section__paragraph">Так, пример (5) взят из произведения, в котором автор рассказывает историю из своего детства. В середине рассказа упоминается хозяйка, которая обещала дать матери героини груши. Затем фокус повествования переключается на других героев, однако в финальном предложении рассказа мы снова видим упоминание этой женщины, вводимое с помощью "кстати" - так автор решила завершить произведение "закольцовкой".</p>
@@ -164,7 +165,7 @@
             <!-- список литературы -->
             <details class="references">
               <summary class="references__summary">
-                <svg class=references__summary-icon" width="15" height="13" viewBox="0 0 34 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="references__summary-icon" width="24" height="15" viewBox="0 0 34 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17 19L1.41688e-06 2.79276L2.92937 1.09842e-06L17 13.4145L31.0706 3.5586e-06L34 2.79276L17 19Z" fill="currentColor"/>
                 </svg>
                 <h3 class="references__summary-subtitle text-section__subtitle" id="references">Список литературы</h3>
@@ -198,19 +199,19 @@
       <div class="footer__questions">
         <h4 class="footer__questions-title">Часто задаваемые вопросы</h4>
         <ul class="footer__questions_list">
-          <li class="footer__questions_list-item"><a class="footer-link" href="#">О проекте</a></li>
-          <li class="footer__questions_list-item"><a class="footer-link" href="#">Кто разрабатывает Справочник?</a></li>
-          <li class="footer__questions_list-item"><a class="footer-link" href="#">Как ссылаться на материалы проекта?</a></li>
-          <li class="footer__questions_list-item"><a class="footer-link" href="#">Как связаться с редакцией?</a></li>
+          <li class="footer__questions_list-item"><a class="footer-link" href="../index.html#about">О проекте</a></li>
+          <li class="footer__questions_list-item"><a class="footer-link" href="../index.html#who">Кто разрабатывает Справочник?</a></li>
+          <li class="footer__questions_list-item"><a class="footer-link" href="../index.html#quote">Как ссылаться на материалы проекта?</a></li>
+          <li class="footer__questions_list-item"><a class="footer-link" href="../index.html#address">Как связаться с редакцией?</a></li>
         </ul>
       </div>
 
       <!-- ссылки на важные страницы -->
       <div class="footer__info">
         <ul class="footer__info-links">
-          <li class="footer__info-links-item"><a class="footer-link" href="#">Главная</a></li>
+          <li class="footer__info-links-item"><a class="footer-link" href="../index.html">Главная</a></li>
           <li class="footer__info-links-item"><a class="footer-link" href="#">Разделы</a></li>
-          <li class="footer__info-links-item"><a class="footer-link" href="#">Авторы</a></li>
+          <li class="footer__info-links-item"><a class="footer-link" href="../project_team.html">Авторы</a></li>
         </ul>
         <!-- копирайт -->
         <p class="footer-copyright">&copy; НИУ ВШЭ Школа Лингвистики 2025</p>

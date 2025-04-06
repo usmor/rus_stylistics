@@ -1,8 +1,7 @@
 /* оформление подвала сайта */
-
 .footer {
-  margin-block-start: 50px;
-  padding: 30px 50px;
+  margin-block-start: 70px;
+  padding: 30px clamp(0.625rem, -0.8195rem + 6.1633vw, 3.125rem);;
   width: 100%;
   background-color: var(--footer-bg-color);
   display: flex;
@@ -28,6 +27,11 @@
   font-size: 14px;
   line-height: 132%;
   text-decoration: none;
+  border-block-end: 1px solid transparent;
+}
+
+.footer-link:hover {
+  border-block-end: 1px solid currentColor;
 }
 
 .footer__info {
@@ -39,6 +43,10 @@
   align-self: flex-end;
 }
 
+.footer__info-links-item {
+  text-align: end;
+}
+
 .footer__info-links {
   display: flex;
   flex-direction: column;
@@ -46,6 +54,7 @@
 }
 
 .footer-copyright {
+  text-align: end;
   font-size: 14px;
   line-height: 132%;
 }

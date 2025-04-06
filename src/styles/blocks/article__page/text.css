@@ -41,7 +41,7 @@
 
 .text-section__paragraph {
   display: inline-block;
-  font-size: 18.5px;
+  font-size: 16px;
   line-height: 132%;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .text-section__list-item {
-  font-size: 18.5px;
+  font-size: 16px;
   line-height: 132%;
 }
 

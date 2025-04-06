@@ -1,12 +1,21 @@
 /* оформление относительного пути */
-
 .path {
   margin-block: 30px 40px;
 }
 
-.path__link {
-  font-size: clamp(0.875rem, 0.8182rem + 0.2841vw, 1rem);;
+.path__link,
+.path__span {
+  font-size: 16px;
   line-height: 132%;
   color: var(--path__link-text-color);
   text-decoration: none;
+}
+
+.path__link:hover {
+  border-block-end:  1px solid currentColor;
+}
+
+.path__current-link {
+  pointer-events: none;
+  font-weight: 700;
 }

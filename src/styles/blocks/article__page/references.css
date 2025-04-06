@@ -1,11 +1,25 @@
 /* оформление списка литературы */
 
+.references__summary-icon {
+  margin-inline-end: 15px;
+}
+
+.references[open] .references__summary-icon {
+  transform: rotate(180deg);
+  opacity: 0.4; 
+  transition: transform opacity;
+}
+
 .references__summary {
   list-style: none; 
   cursor: pointer;
   display: flex;
   align-items: center; 
   gap: 10px;
+}
+
+.references__summary::-webkit-details-marker {
+  display:none;
 }
 
 .references__summary-subtitle {

@@ -2,7 +2,7 @@
 
 .article__nav__list {
   position: sticky;
-  top: 150px;
+  top: 50px;
   z-index: 1000; 
 }
 
@@ -16,7 +16,7 @@
 .article__nav__list-item {
   margin-inline-start: clamp(0.625rem, -0.8036rem + 2.9762vw, 1.875rem);
   text-transform: lowercase;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 132%;
 }
 

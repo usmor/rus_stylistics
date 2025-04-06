@@ -1,0 +1,42 @@
+.table__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section__card {
+  padding: clamp(0.9375rem, 0.3958rem + 2.3112vw, 1.875rem) clamp(1.25rem, 0.5277rem + 3.0817vw, 2.5rem);
+  width: 100%;
+  border: none;
+  box-shadow: 0px 4px 5.6px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.section__card-title {
+  font-weight: 600;
+  font-size: clamp(1.125rem, 0.9083rem + 0.9245vw, 1.5rem);
+  line-height: clamp(1.5rem, 1.3194rem + 0.7704vw, 1.8125rem);
+  margin-block-end: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
+  border-block-end:  2px dashed transparent;
+}
+
+.section__card:hover .section__card-title {
+  border-block-end:  2px dashed currentColor;
+}
+
+.lexicon {
+  background-color: var(--lexicon-bg-color);
+}
+
+.gramm_forms {
+  background-color: var(--gramm_forms-bg-color);
+}
+
+.syntax {
+  background-color: var(--syntax-bg-color);
+  color: var(--accent__section-text-color);
+}

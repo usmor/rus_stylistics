@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/blocks/header/header.css" />
+    <link rel="stylesheet" href="./styles/blocks/content/content.css"/>
+    <link rel="stylesheet" href="./styles/blocks/main__page/about.css">
+    <link rel="stylesheet" href="./styles/blocks/main__page/main__page.css">
+    <link rel="stylesheet" href="./styles/blocks/main__page/table_of_contents.css"/>
+    <link rel="stylesheet" href="./styles/blocks/main__page/tags_cloud.css"/>
+    <link rel="stylesheet" href="./styles/blocks/main__page/faq.css"/>
+    <link rel="stylesheet" href="./styles/blocks/footer/footer.css" />
+    <link rel="stylesheet" href="./styles/blocks/path/path.css"/>
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <h1 class="project-title">стилистика русского языка</h1>
+
+      <!-- функция поиска -->
+      <button class="header__button search__button" type="button">
+        <svg class="search__icon"
+        xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 54 54">
+          <path  d="M19.48 4.251c-8.454 0-15.306 6.98-15.306 15.589 0 8.61 6.852 15.588 15.305 15.588S34.784 28.45 34.784 19.84c0-8.61-6.852-15.589-15.305-15.589ZM0 19.84C0 8.883 8.721 0 19.48 0c10.757 0 19.478 8.883 19.478 19.84 0 4.713-1.613 9.042-4.308 12.445L54 51.994 51.048 55l-19.35-19.708c-3.341 2.744-7.592 4.388-12.219 4.388C8.721 39.68 0 30.797 0 19.84Z" clip-rule="evenodd"/>
+        </svg>
+      </button>
+
+      <!-- раскрывающееся меню-->
+      <button class="header__button menu__button" type="button">
+        <svg class="menu__icon"
+        xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 45 45">
+          <path d="M0 4.821h44V0H0v4.821ZM0 45h44v-4.821H0V45Zm0-20.09h44v-4.82H0v4.82Z"/>
+        </svg>
+      </button>
+    </header>
+
+    <main class="content">
+      <!-- путь до статьи -->
+      <!-- добавить соответствующие ссылки -->
+      <div class="path">
+        <a class="path__link path__current-link" href="index.html">главная</a> 
+      </div>
+
+      <!-- о проекте -->
+      <section class="about">
+        <!-- название раздела -->
+        <h2 class="section__title" id="about">О проекте</h2>
+        <!-- описание проекта -->
+        <div class="section__text">
+          <p class="section__text-paragraph">Проект «Стилистика русского языка» создан для того, чтобы сделать знания по грамматике и семантике более доступными для всех, кто работает с речью — будь то студенты, журналисты, редакторы или преподаватели.</p>
+          <p class="section__text-paragraph">Главная задача проекта — ответить на вопрос «Какой вариант конструкции является нормативным и более удачным с коммуникативной точки зрения?»</p>
+          <p class="section__text-paragraph">В справочнике вы найдете информацию о сложных случаях употребления разных языковых единиц. Материал представлен в доступной форме и не требует специальных лингвистических знаний. А каждая статья будет сопровождаться наглядными примерами, что поможет лучше понять критерии выбора тех или иных языковых конструкций.</p>
+          <p class="section__text-paragraph">Особое внимание уделяется новым и актуальным проблемам грамматики и семантики русского языка, которые не освещены в традиционных учебниках, но важны для носителей языка.</p>
+        </div>
+      </section>
+
+      <!-- карточки с разделами -->
+      <section class="table_of_contents">
+        <!-- название раздела -->
+        <h2 class="table__title section__title">Разделы</h2>
+        <!-- список карточек с названием и описанием разделов справочника -->
+        <ul class="table__list">
+            <li class="table__list-item">
+                <a href="lexicon.html" class="section__card lexicon">
+                    <h3 class="section__card-title">Лексика</h3>
+                    <p class="section__card-description section__text-paragraph">О сложных случаях использования слов в различных контекстах</p>
+                </a>
+            </li>
+            <li class="table__list-item">
+                <a href="grammatical_forms.html" class="section__card gramm_forms">
+                    <h3 class="section__card-title">Грамматические формы</h3>
+                    <p class="section__card-description section__text-paragraph">О структуре слова и грамматических значениях его частей</p>
+                </a>
+            </li>
+            <li class="table__list-item">
+                <a href="syntax.html" class="section__card syntax">
+                    <h3 class="section__card-title">Синтаксис</h3>
+                    <p class="section__card-description section__text-paragraph">О конструкциях, предложениях и способах их связи в дискурсе</p>
+                </a>
+            </li>
+        </ul>
+      </section>
+
+      <!-- облако тегов -->
+      <section class="tags_cloud">
+        <!-- название раздела -->
+        <h2 class="tags_cloud__title section__title">Облако тегов</h2>
+        <!-- описание раздела -->
+        <p class="tags_cloud__description section__text-paragraph">Облегчит поиск нужной вам информации. Просто кликните один или несколько тегов, и система покажет все доступные статьи на эту тему.</p>
+        <!-- список тегов -->
+        <ul class="tags_cloud__list">
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">управление</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">падеж</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">предлог</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">подлежащее</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">дополнение</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">члены предложения</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">местоимения</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">отрицание</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">неопределенность</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">дискурсивные маркеры</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">вводные слова</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">наречия</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">модальность</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">семантика</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">паронимы</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">орфография</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">варианты правописания</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">союзы</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">грамматика</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">синонимы</a></li>
+          <li class="tags_cloud__list-item"><a class="tags_cloud__list-item-link" href="#">грамматические варианты</a></li>
+      </ul>
+      </section>
+
+      <section class="faq">
+        <h2 class="faq__title section__title">Вопросы и ответы</h2>
+        <ul class="faq__list">
+          <li class="faq__list-item">
+            <details class="question">
+              <summary class="question__summary">
+                <svg class="question__summary-icon" width="24" height="15" viewBox="0 0 34 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 19L1.41688e-06 2.79276L2.92937 1.09842e-06L17 13.4145L31.0706 3.5586e-06L34 2.79276L17 19Z" fill="currentColor"/>
+                </svg>
+                <h3 сlass="question__summary-title" id="who">Кто разрабатывает Справочник?</h3>
+              </summary>
+              <div class="question__answer section__text">
+                <p class="section__text-paragraph">Команда проекта – это инициативная группа студентов и преподавателей Школы лингвистики Высшей Школы Экономики, которая готовит статьи, объясняющие в доступной форме стилистические вариативности в современном русском языке. Простота языка авторов помогает сделать материал понятным для тех, кто ни разу в жизни не сталкивался с лингвистикой.</p>
+                <p class="section__text-paragraph">Подробнее об участниках можно почитать на соответствующей <a class="paragraph-link" href="/src/project_team.html">странице</a>.</p>
+              </div>
+            </details>
+          </li>
+          <li class="faq__list-item">
+            <details class="question">
+              <summary class="question__summary">
+                <svg class="question__summary-icon" width="24" height="15" viewBox="0 0 34 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 19L1.41688e-06 2.79276L2.92937 1.09842e-06L17 13.4145L31.0706 3.5586e-06L34 2.79276L17 19Z" fill="currentColor"/>
+                </svg>
+                <h3 сlass="question__summary-title">Как устроена статья в Cправочнике?</h3>
+              </summary>
+              <div class="question__answer section__text">
+                <p class="section__text-paragraph">Каждая глава в справочнике состоит из 6 секций.</p>
+                <ol class="section__list">
+                  <li class="section__list-item dash">
+                      <p class="section__text-paragraph"><span class="accent-text">Введение</span> дает общее представление о теме.</p>
+                  </li>
+                  <li class="section__list-item dash">
+                      <p class="section__text-paragraph"><span class="accent-text">Конкретный вопрос</span>, на который отвечает глава.</p>
+                  </li>
+                  <li class="section__list-item dash">
+                      <p class="section__text-paragraph"><span class="accent-text">Краткий ответ</span> для тех, кто спешит.</p>
+                  </li>
+                  <li class="section__list-item dash">
+                      <p class="section__text-paragraph"><span class="accent-text">Описание языковой реальности</span> поможет лучше понять особенности рассматриваемой вариативности.</p>
+                  </li>
+                  <li class="section__list-item dash">
+                      <p class="section__text-paragraph"><span class="accent-text">Развернутый ответ</span> с подробным изложением информации, включая аргументы, примеры и дополнительные детали.</p>
+                  </li>
+                  <li class="section__list-item dash">
+                      <p class="section__text-paragraph"><span class="accent-text">Список литературы</span> для дополнительного изучения темы.</p>
+                  </li>
+              </ol>
+              </div>
+            </details>
+          </li>
+          <li class="faq__list-item">
+            <details class="question">
+              <summary class="question__summary">
+                <svg class="question__summary-icon" width="24" height="15" viewBox="0 0 34 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 19L1.41688e-06 2.79276L2.92937 1.09842e-06L17 13.4145L31.0706 3.5586e-06L34 2.79276L17 19Z" fill="currentColor"/>
+                </svg>
+                <h3 сlass="question__summary-title" id="quote">Как ссылаться на материалы проекта?</h3>
+              </summary>
+              <div class="question__answer section__text">
+                <p class="section__text-paragraph">Каждая статья в Справочнике принадлежит отдельному автору. При&nbsp;использовании материалов проекта, пожалуйста, ссылайтесь на автора и на сайт.</p>
+                <p class="section__text-paragraph reference">Е. Картова. Употребление дискурсивного слова «кстати» // Справочник по&nbsp;практической стилистики русского языка. <a class="paragraph-link">https://rus_stylistics.ru</a></p>
+              </div>
+            </details>
+          </li>
+          <li class="faq__list-item">
+            <details class="question">
+              <summary class="question__summary">
+                <svg class="question__summary-icon" width="24" height="15" viewBox="0 0 34 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 19L1.41688e-06 2.79276L2.92937 1.09842e-06L17 13.4145L31.0706 3.5586e-06L34 2.79276L17 19Z" fill="currentColor"/>
+                </svg>
+                <h3 сlass="question__summary-title" id="address">Как связаться с редакцией Cправочника?</h3>
+              </summary>
+              <div class="question__answer section__text">
+                <p class="section__text-paragraph">Чтобы предложить свои материалы или сообщить об ошибке, напишите электронное письмо по адресу <a href="mailto:rus_stylistics@yandex.ru" class="paragraph-link">rus_stlistics@yandex.ru</a>.</p>
+              </div>
+            </details>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+    
+    <footer class="footer">
+      <!-- часто задаваемые вопросы -->
+      <div class="footer__questions">
+        <h4 class="footer__questions-title">Часто задаваемые вопросы</h4>
+        <ul class="footer__questions_list">
+          <li class="footer__questions_list-item"><a class="footer-link" href="#about">О проекте</a></li>
+          <li class="footer__questions_list-item"><a class="footer-link" href="#who">Кто разрабатывает Справочник?</a></li>
+          <li class="footer__questions_list-item"><a class="footer-link" href="#quote">Как ссылаться на материалы проекта?</a></li>
+          <li class="footer__questions_list-item"><a class="footer-link" href="#address">Как связаться с редакцией?</a></li>
+        </ul>
+      </div>
+
+      <!-- ссылки на важные страницы -->
+      <div class="footer__info">
+        <ul class="footer__info-links">
+          <li class="footer__info-links-item"><a class="footer-link" href="#">Главная</a></li>
+          <li class="footer__info-links-item"><a class="footer-link" href="#">Разделы</a></li>
+          <li class="footer__info-links-item"><a class="footer-link" href="../src/project_team.html">Команда проекта</a></li>
+        </ul>
+        <!-- копирайт -->
+        <p class="footer-copyright">&copy; НИУ ВШЭ Школа Лингвистики 2025</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
