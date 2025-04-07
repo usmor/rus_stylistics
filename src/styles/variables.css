@@ -6,6 +6,7 @@
   --violet: #6200be;
   --orange: #fd7f52;
   --grey: rgba(0, 0, 0, 0.6);
+  --light-grey: rgba(0, 0, 0, 0.05);
 
   /* переменные, связанные с текстом */
   --main-font: 'Inter-Variable';
@@ -30,4 +31,8 @@
   --gramm_forms-bg-color: var(--orange, #fd7f52);
   --syntax-bg-color: var(--violet, #6200be);
 
+  /* переменные, связанные с карточками статей */
+  --card-border-color: var(--green, #b4d93b);
+  --card-bg-color: var(--white, #fff);
+  --card-bg-hover-color: var(--light-grey, rgba(0, 0, 0, 0.05));
 }

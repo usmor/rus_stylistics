@@ -24,6 +24,15 @@
   line-height: 132%;
 }
 
+.article__author-link {
+  text-decoration: none;
+  border-block-end: 1px solid transparent;
+}
+
+.article__author-link:hover {
+  border-block-end: 1px solid currentColor;
+}
+
 .article__text {
   margin-block-start: 50px;
   display: flex;

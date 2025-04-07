@@ -64,25 +64,25 @@
       </section>
 
       <!-- карточки с разделами -->
-      <section class="table_of_contents">
+      <section class="table_of_contents" id="sections">
         <!-- название раздела -->
         <h2 class="table__title section__title">Разделы</h2>
         <!-- список карточек с названием и описанием разделов справочника -->
         <ul class="table__list">
             <li class="table__list-item">
-                <a href="lexicon.html" class="section__card lexicon">
+                <a href="/src/sections/lexicon.html" class="section__card lexicon">
                     <h3 class="section__card-title">Лексика</h3>
                     <p class="section__card-description section__text-paragraph">О сложных случаях использования слов в различных контекстах</p>
                 </a>
             </li>
             <li class="table__list-item">
-                <a href="grammatical_forms.html" class="section__card gramm_forms">
+                <a href="/src/sections/grammatical_forms.html" class="section__card gramm_forms">
                     <h3 class="section__card-title">Грамматические формы</h3>
                     <p class="section__card-description section__text-paragraph">О структуре слова и грамматических значениях его частей</p>
                 </a>
             </li>
             <li class="table__list-item">
-                <a href="syntax.html" class="section__card syntax">
+                <a href="/src/sections/syntax.html" class="section__card syntax">
                     <h3 class="section__card-title">Синтаксис</h3>
                     <p class="section__card-description section__text-paragraph">О конструкциях, предложениях и способах их связи в дискурсе</p>
                 </a>
@@ -217,15 +217,15 @@
       </div>
 
       <!-- ссылки на важные страницы -->
-      <div class="footer__info">
+      <nav class="footer__info">
         <ul class="footer__info-links">
           <li class="footer__info-links-item"><a class="footer-link" href="#">Главная</a></li>
-          <li class="footer__info-links-item"><a class="footer-link" href="#">Разделы</a></li>
+          <li class="footer__info-links-item"><a class="footer-link" href="#sections">Разделы</a></li>
           <li class="footer__info-links-item"><a class="footer-link" href="../src/project_team.html">Команда проекта</a></li>
         </ul>
         <!-- копирайт -->
         <p class="footer-copyright">&copy; НИУ ВШЭ Школа Лингвистики 2025</p>
-      </div>
+      </nav>
     </footer>
 
   </body>

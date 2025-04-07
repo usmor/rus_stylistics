@@ -1,0 +1,29 @@
+.subsetion {
+  margin-block-end: 70px;
+}
+
+.subsetion__title {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(1.25rem, 1.1055rem + 0.6163vw, 1.5rem);
+  line-height: clamp(1.5625rem, 1.418rem + 0.6163vw, 1.8125rem);
+  margin-block-end: 20px;
+}
+
+.subsetion__cards_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(0.9375rem, 0.0347rem + 3.8521vw, 2.5rem);
+  width: 80%;
+}
+
+.subsetion__cards_list-item {
+  width: 100%;
+}
+
+@media (width < 768px) {
+  .subsetion__cards_list {
+    width: 100%;
+  }
+}

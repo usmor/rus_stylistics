@@ -1,0 +1,36 @@
+.section__name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(1.375rem, 0.5805rem + 3.3898vw, 2.75rem);
+  line-height: clamp(1.75rem, 0.8472rem + 3.8521vw, 3.3125rem);
+  margin-block-end: 20px;
+}
+
+.section__description {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  gap: 10px;
+  margin-block-end: clamp(1.25rem, -0.1945rem + 6.1633vw, 3.75rem);
+}
+
+.section__description-paragraph {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 132%;
+}
+
+.section__description_list {
+  margin-inline-start: 20px;
+}
+
+.section__description_list-item .section__description-paragraph::before {
+  content: '-';
+  margin-inline-end: 5px;
+}
+
+@media (width <= 768px) {
+  .section__description {
+    width: 100%;
+  }
+}

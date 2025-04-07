@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Синтаксис</title>
+    <link rel="stylesheet" href="../fonts/fonts.css" />
+    <link rel="stylesheet" href="../styles/variables.css" />
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="stylesheet" href="../styles/blocks/header/header.css" />
+    <link rel="stylesheet" href="../styles/blocks/content/content.css"/>
+    <link rel="stylesheet" href="../styles/blocks/footer/footer.css" />
+    <link rel="stylesheet" href="../styles/blocks/path/path.css"/>
+    <link rel="stylesheet" href="../styles/blocks/section__page/section__page.css"/>
+    <link rel="stylesheet" href="../styles/blocks/section__page/subsection.css"/>
+    <link rel="stylesheet" href="../styles/blocks/section__page/section__article-card.css"/>
+    <link rel="icon" href="../images/favicon.ico" sizes="any" />
+    <link rel="icon" href="../svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../images/favicon.png" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <h1 class="project-title">стилистика русского языка</h1>
+
+      <!-- функция поиска -->
+      <button class="header__button search__button" type="button">
+        <svg class="search__icon"
+        xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 54 54">
+          <path  d="M19.48 4.251c-8.454 0-15.306 6.98-15.306 15.589 0 8.61 6.852 15.588 15.305 15.588S34.784 28.45 34.784 19.84c0-8.61-6.852-15.589-15.305-15.589ZM0 19.84C0 8.883 8.721 0 19.48 0c10.757 0 19.478 8.883 19.478 19.84 0 4.713-1.613 9.042-4.308 12.445L54 51.994 51.048 55l-19.35-19.708c-3.341 2.744-7.592 4.388-12.219 4.388C8.721 39.68 0 30.797 0 19.84Z" clip-rule="evenodd"/>
+        </svg>
+      </button>
+
+      <!-- раскрывающееся меню-->
+      <button class="header__button menu__button" type="button">
+        <svg class="menu__icon"
+        xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 45 45">
+          <path d="M0 4.821h44V0H0v4.821ZM0 45h44v-4.821H0V45Zm0-20.09h44v-4.82H0v4.82Z"/>
+        </svg>
+      </button>
+    </header>
+
+    <main class="content">
+      <!-- путь до статьи -->
+      <!-- добавить соответствующие ссылки -->
+      <div class="path">
+        <a class="path__link" href="../index.html">главная</a>
+        <span class="path__span">&mdash;</span>
+        <a class="path__link path__current-link" href="#">синтаксис</a> 
+      </div>
+
+      <h2 class="section__name">Синтаксис</h2>
+      <div class="section__description">
+          <p class="section__description-paragraph">Статьи данного раздела охватывают широкий пласт проблем, возникающих при построении связанного текста:</p> 
+          <ul class="section__description_list">
+            <li class="section__description_list-item"><p class="section__description-paragraph">употребление словосочетаний и конструкций;</p></li>
+            <li class="section__description_list-item"><p class="section__description-paragraph">построение предложений и дискурса в целом;</p></li>
+            <li class="section__description_list-item"><p class="section__description-paragraph">использование слов, организующие дискурс.</p></li>
+          </ul>
+      </div>
+
+      <section class="subsetion" id="discourse_markers">
+        <h3 class="subsetion__title">Дискурсивные слова и коннекторы</h3>
+        <ul class="subsetion__cards_list">
+          <li class="subsetion__cards_list-item">
+            <a class="subsetion__cards_list-item-link" href="/src/articles/example.html">
+              <div class="article-card">
+                <h4 class="article-card__title">Употребление дискурсивного слова «кстати»</h4>
+                <p class="article-card__author">автор статьи: Елена&nbsp;Картова</p>
+                <ul class="article-card__tags_list">
+                  <li class="tags_list-item">
+                    <p class="tag">#союзы</p>
+                  </li>
+                  <li class="tags_list-item">
+                    <p class="tag">#уступительность</p>
+                  </li>
+                  <li class="tags_list-item">
+                    <p class="tag">#семантика</p>
+                  </li>
+                  <li class="tags_list-item">
+                    <p class="tag">#синтаксис</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="subsetion" id="conjuctions">
+        <h3 class="subsetion__title">Союзы</h3>
+        <ul class="subsetion__cards_list">
+          <li class="subsetion__cards_list-item">
+            <a class="subsetion__cards_list-item-link" href="/src/articles/example.html">
+              <div class="article-card">
+                <h4 class="article-card__title">Особенности употребления некоторых союзов со значением уступки</h4>
+                <p class="article-card__author">автор статьи: Мария&nbsp;Изосимова</p>
+                <ul class="article-card__tags_list">
+                  <li class="tags_list-item">
+                    <p class="tag">#дискурсивные маркеры</p>
+                  </li>
+                  <li class="tags_list-item">
+                    <p class="tag">#вводные слова</p>
+                  </li>
+                  <li class="tags_list-item">
+                    <p class="tag">#коннекторы</p>
+                  </li>
+                  <li class="tags_list-item">
+                    <p class="tag">#синтаксис</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+    
+    <footer class="footer">
+      <!-- часто задаваемые вопросы -->
+      <div class="footer__questions">
+        <h4 class="footer__questions-title">Часто задаваемые вопросы</h4>
+        <ul class="footer__questions_list">
+          <li class="footer__questions_list-item"><a class="footer-link" href="#about">О проекте</a></li>
+          <li class="footer__questions_list-item"><a class="footer-link" href="#who">Кто разрабатывает Справочник?</a></li>
+          <li class="footer__questions_list-item"><a class="footer-link" href="#quote">Как ссылаться на материалы проекта?</a></li>
+          <li class="footer__questions_list-item"><a class="footer-link" href="#address">Как связаться с редакцией?</a></li>
+        </ul>
+      </div>
+
+      <!-- ссылки на важные страницы -->
+      <nav class="footer__info">
+        <ul class="footer__info-links">
+          <li class="footer__info-links-item"><a class="footer-link" href="../index.html">Главная</a></li>
+          <li class="footer__info-links-item"><a class="footer-link" href="../index.html#sections">Разделы</a></li>
+          <li class="footer__info-links-item"><a class="footer-link" href="../project_team.html">Команда проекта</a></li>
+        </ul>
+        <!-- копирайт -->
+        <p class="footer-copyright">&copy; НИУ ВШЭ Школа Лингвистики 2025</p>
+      </nav>
+    </footer>
+  </body>
+</html>
