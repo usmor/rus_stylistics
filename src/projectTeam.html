@@ -5,14 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Команда проекта</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/blocks/header/header.css" />
-    <link rel="stylesheet" href="./styles/blocks/content/content.css"/>
-    <link rel="stylesheet" href="./styles/blocks/content/content.css"></link>
-    <link rel="stylesheet" href="./styles/blocks/footer/footer.css" />
-    <link rel="stylesheet" href="./styles/blocks/path/path.css"/>
-    <link rel="stylesheet" href="./styles/blocks/project-team__page/project-team__page.css"/> 
+    <link rel="stylesheet" href="./styles/blocks/projectTeam/projectTeam.css">
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/favicon.png" />
@@ -51,8 +44,23 @@
 
       <h2 class="page__title">Команда проекта</h2>
 
+      <section class="members developers">
+        <h3 class="members__title">Руководитель проекта</h3>
+        <ul class="members__list">
+          <li class="members__list-item">
+            <img src="./images/profile__picture3.jpeg" loading="lazy" class="member__profile-picture">
+            <div class="member__info">
+              <h4 class="member__info-name">Юлия Михайловна Кувшинская</h4>
+              <a class="member__info-contact" href="mailto:">mailbox0@gmail.com</a>
+  
+            </div>
+          </li>
+        </ul>
+
+      </section>
+
       <section class="members authors">
-        <h3 class="members__title">Авторы</h3>
+        <h3 class="members__title">Составители статей</h3>
         <ul class="members__list">
           <li class="members__list-item">
             <img src="./images/profile_picture.jpeg" loading="lazy" class="member__profile-picture">
@@ -60,7 +68,7 @@
               <h4 class="member__info-name" id="elena_kartova">Елена Картова</h4>
               <a class="member__info-contact" href="mailto:">mailbox@gmail.com</a>
               <div class="member__info-articles">
-                <h5 class="articles__list-title">Список статей автора</h5>
+                <h5 class="articles__list-title">Список статей</h5>
                 <ul class="articles__list">
                   <li class="articles__list-item"><a href="./articles/example.html" class="article-link">Употребление дискурсивного слова «кстати»</a></li>
                   <li class="articles__list-item"><a href="#" class="article-link">Употребление неопределенного местоимения «какой-либо»</a></li>
@@ -74,7 +82,7 @@
               <h4 class="member__info-name" id="maria_isocimova">Мария Изосимова</h4>
               <a class="member__info-contact" href="mailto:">mailbox1@gmail.com</a>
               <div class="member__info-articles">
-                <h5 class="articles__list-title">Список статей автора</h5>
+                <h5 class="articles__list-title">Список статей</h5>
                 <ul class="articles__list">
                   <li class="articles__list-item"><a href="#" class="article-link">Особенности употребления некоторых союзов со значением уступки</a></li>
                 </ul>
@@ -87,7 +95,7 @@
               <h4 class="member__info-name" id="aleksandra_kuzmina">Александра Кузьмина</h4>
               <a class="member__info-contact" href="mailto:">mailbox2@gmail.com</a>
               <div class="member__info-articles">
-                <h5 class="articles__list-title">Список статей автора</h5>
+                <h5 class="articles__list-title">Список статей</h5>
                 <ul class="articles__list">
                   <li class="articles__list-item"><a href="#" class="article-link">Употребление глаголов «представить» - «предоставить»</a></li>
                   <li class="articles__list-item"><a href="#" class="article-link">Употребление определенных местоимений «весь», «все», «каждый», «всякий»</a></li>
@@ -132,7 +140,7 @@
         <ul class="footer__info-links">
           <li class="footer__info-links-item"><a class="footer-link" href="./index.html">Главная</a></li>
           <li class="footer__info-links-item"><a class="footer-link" href="./index.html#sections">Разделы</a></li>
-          <li class="footer__info-links-item"><a class="footer-link" href="#">Авторы</a></li>
+          <li class="footer__info-links-item"><a class="footer-link" href="#">Команда проекта</a></li>
         </ul>
         <!-- копирайт -->
         <p class="footer-copyright">&copy; НИУ ВШЭ Школа Лингвистики 2025</p>
