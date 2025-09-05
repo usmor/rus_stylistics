@@ -1,38 +1,38 @@
 :root {
   /* переменные, связанные с цветом */
-  --black: #000;
+  --black: #000000;
   --green: #b4d93b;
-  --white: #fff;
+  --white: #ffffff;
   --violet: #6200be;
   --orange: #fd7f52;
-  --grey: rgba(0, 0, 0, 0.6);
-  --light-grey: rgba(0, 0, 0, 0.05);
+  --grey: rgb(0 0 0 / 60%);
+  --light-grey: rgb(0 0 0 / 5%);
 
   /* переменные, связанные с текстом */
-  --main-font: 'Inter-Variable';
-  --main-text-color: var(--black, #000);
-  --path__link-text-color: var(--grey, rgba(0, 0, 0, 0.6));
-  --tag__link-text-color: var(--grey, rgba(0, 0, 0, 0.6));
+  --main-font: "Inter-Variable";
+  --main-text-color: var(--black);
+  --path-link-text-color: var(--grey);
+  --tag-link-text-color: var(--grey);
   --main-font-weight: 400;
   --title-font-weight: 700;
-  --accent__section-text-color: var(--white, #fff);
-  --accent__section-bg-color: var(--orange, #fd7f52);
-  --bq-border-color: var(--green, #b4d93b);
-  --p-link-color: var(--violet, #6200be);
-  --bq-source-color: var(--grey, rgba(0, 0, 0, 0.6));
+  --accent-section-text-color: var(--white);
+  --accent-section-bg-color: var(--orange);
+  --bq-border-color: var(--green);
+  --p-link-color: var(--violet);
+  --bq-source-color: var(--grey);
 
   /* переменные, связанные с цветами фонов блоков */
-  --bg-color: var(--white, #fff);
-  --header-bg-color: var(--green, #b4d93b);
-  --footer-bg-color: var(--green, #b4d93b);
+  --bg-color: var(--white);
+  --header-bg-color: var(--green);
+  --footer-bg-color: var(--green);
 
-  /* переменные, связанные с цветами фонов разделов*/
-  --lexicon-bg-color: var(--green, #b4d93b);
-  --gramm_forms-bg-color: var(--orange, #fd7f52);
-  --syntax-bg-color: var(--violet, #6200be);
+  /* переменные, связанные с цветами фонов разделов */
+  --lexicon-bg-color: var(--green);
+  --gramm-forms-bg-color: var(--orange);
+  --syntax-bg-color: var(--violet);
 
   /* переменные, связанные с карточками статей */
-  --card-border-color: var(--green, #b4d93b);
-  --card-bg-color: var(--white, #fff);
-  --card-bg-hover-color: var(--light-grey, rgba(0, 0, 0, 0.05));
+  --card-border-color: var(--green);
+  --card-bg-color: var(--white);
+  --card-bg-hover-color: var(--light-grey);
 }
