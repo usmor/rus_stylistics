@@ -5,7 +5,7 @@
   --white: #ffffff;
   --violet: #6200be;
   --orange: #fd7f52;
-  --grey: rgb(0 0 0 / 60%);
+  --grey: #4c4c4c;
   --light-grey: rgb(0 0 0 / 5%);
 
   /* переменные, связанные с текстом */
@@ -14,7 +14,7 @@
   --path-link-text-color: var(--grey);
   --tag-link-text-color: var(--grey);
   --main-font-weight: 400;
-  --title-font-weight: 700;
+  --title-font-weight: 600;
   --accent-section-text-color: var(--white);
   --accent-section-bg-color: var(--orange);
   --bq-border-color: var(--green);
