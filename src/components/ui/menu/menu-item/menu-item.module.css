@@ -1,0 +1,43 @@
+.menuLink,
+.menuLabel {
+  display: block;
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  pointer-events: auto;
+}
+
+.menuLink:hover,
+.menuLabel:hover {
+  color: var(--grey);
+}
+
+.menuLink:active,
+.menuLabel:active {
+  color: var(--black);
+}
+
+.menuLink:focus,
+.menuLabel:focus {
+  outline: none;
+}
+
+.menuLink:focus-visible,
+.menuLabel:focus-visible {
+  color: var(--grey);
+  outline: none;
+}
+
+.isActive {
+  color: var(--black);
+}
+
+.isActive::before {
+  content: "[";
+}
+
+.isActive::after {
+  content: "]";
+}

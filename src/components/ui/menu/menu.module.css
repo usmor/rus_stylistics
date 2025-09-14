@@ -1,0 +1,132 @@
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  width: fit-content;
+  min-width: 45%;
+  height: fit-content;
+  background-color: var(--green);
+  padding-block: 20px 50px;
+  padding-inline: 25px;
+}
+
+.closeButton {
+  display: flex;
+  align-self: end;
+  width: clamp(1.25rem, 0.83rem + 1.85vw, 2.5rem);
+  height: clamp(1.25rem, 0.83rem + 1.85vw, 2.5rem);
+  margin-left: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.icon {
+  display: block;
+  width: clamp(1.25rem, 0.83rem + 1.85vw, 2.5rem);
+  height: clamp(1.25rem, 0.83rem + 1.85vw, 2.5rem);
+  transition: transform 0.2s ease;
+  fill: var(--black);
+}
+
+.closeButton:hover .icon {
+  transform: scale(0.8);
+  fill: var(--grey);
+}
+
+.closeButton:active .icon {
+  transform: scale(0.7);
+  transition: transform 0.1s ease;
+  fill: var(--white);
+}
+
+.closeButton:focus {
+  outline: none;
+}
+
+.closeButton:focus-visible {
+  outline: none;
+}
+
+.closeButton:focus-visible .icon {
+  fill: var(--white);
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.63rem, 0.42rem + 0.93vw, 1.25rem);
+  margin: 0;
+  padding: 0;
+}
+
+.subMenuList {
+  margin-block-start: clamp(0.63rem, 0.42rem + 0.93vw, 1.25rem);
+  margin-inline-start: 50px;
+}
+
+.menuItem {
+  position: relative;
+  color: var(--white);
+  font-weight: 600;
+  font-size: clamp(1.13rem, 0.75rem + 1.67vw, 2.25rem);
+  line-height: 1.2;
+  pointer-events: none;
+}
+
+.menuSummary {
+  list-style: none;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.menuSummary::-webkit-details-marker {
+  display: none;
+}
+
+.menuSummary:hover {
+  color: var(--grey);
+}
+
+.menuSummary:active {
+  color: var(--black);
+}
+
+.menuSummary:focus {
+  outline: none;
+}
+
+.menuSummary:focus-visible {
+  color: var(--grey);
+  outline: none;
+}
+
+@media (width <= 780px) {
+  .menu {
+    min-width: 60%;
+  }
+}
+
+@media (width <= 630px) {
+  .menu {
+    min-width: 75%;
+  }
+}
+
+@media (width <= 425px) {
+  .menu {
+    width: 100%;
+    padding-inline-start: clamp(1.88rem, -4.79rem + 33.33vw, 4.06rem);
+  }
+
+  .subMenuList {
+    margin-inline-start: clamp(1.88rem, -0.38rem + 11.29vw, 4.06rem);
+  }
+}
