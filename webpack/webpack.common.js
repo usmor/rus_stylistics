@@ -12,7 +12,7 @@ module.exports = {
     filename: production
       ? "static/scripts/[name].[contenthash].js"
       : "static/scripts/[name].js",
-    publicPath: process.env.PUBLIC_PATH ? process.env.PUBLIC_PATH : "/",
+    publicPath: process.env.PUBLIC_PATH || "/",
     clean: true,
     chunkFilename: "static/scripts/[name].[contenthash].bundle.js",
   },
@@ -87,7 +87,7 @@ module.exports = {
     }),
     new webpack.EnvironmentPlugin({
       NODE_ENV: "development",
-      PUBLIC_PATH: null,
+      PUBLIC_PATH: process.env.PUBLIC_PATH || "/",
     }),
     new FaviconsWebpackPlugin({
       logo: path.resolve(__dirname, "..", "./public/favicon.svg"),
