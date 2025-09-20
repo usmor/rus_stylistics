@@ -103,6 +103,11 @@ module.exports = {
         icons: {
           coast: false,
           yandex: false,
+          windows: false,
+          android: false,
+          firefox: false,
+          appleIcon: false,
+          appleStartup: false,
         },
       },
     }),
