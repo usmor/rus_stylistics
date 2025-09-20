@@ -14,6 +14,7 @@ module.exports = {
       : "static/scripts/[name].js",
     publicPath: process.env.PUBLIC_PATH ? process.env.PUBLIC_PATH : "/",
     clean: true,
+    chunkFilename: "static/scripts/[name].[contenthash].bundle.js",
   },
   module: {
     rules: [
@@ -80,7 +81,9 @@ module.exports = {
       template: path.resolve(__dirname, "..", "./public/index.html"),
     }),
     new MiniCssExtractPlugin({
-      filename: "static/styles/[name].[contenthash].css",
+      filename: production
+        ? "static/styles/[name].[contenthash].css"
+        : "static/styles/[name].css",
     }),
     new webpack.EnvironmentPlugin({
       NODE_ENV: "development",
