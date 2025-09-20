@@ -1,0 +1,19 @@
+{
+  "sections": [
+    {
+      "section": "Лексика",
+      "id": "lexicon",
+      "subsections": []
+    },
+    {
+      "section": "Грамматические формы",
+      "id": "grammar-forms",
+      "subsections": []
+    },
+    {
+      "section": "Синтаксис",
+      "id": "syntax",
+      "subsections": []
+    }
+  ]
+}

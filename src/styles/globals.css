@@ -8,13 +8,12 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
+  height: 100dvh;
   margin: 0;
+  font-weight: var(--main-font-weight, 400);
   font-family: var(--main-font, sans-serif);
   background-color: var(--bg-color);
-  font-weight: var(--main-font-weight, 400);
-  height: 100dvh;
 }
 
 h1,
@@ -33,13 +32,14 @@ li {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 button,
 input {
-  color: currentColor;
-  font-family: inherit;
+  color: currentcolor;
   font-size: inherit;
+  font-family: inherit;
 }
 
 ul,
