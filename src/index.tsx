@@ -12,7 +12,7 @@ const root = ReactDOMClient.createRoot(container!);
 
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={process.env.PUBLIC_PATH ? process.env.PUBLIC_PATH : "/"}>
       <App />
     </Router>
   </React.StrictMode>,
