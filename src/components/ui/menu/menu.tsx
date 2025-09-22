@@ -2,12 +2,13 @@ import React, { FC, memo, useEffect, useState } from "react";
 import styles from "./menu.module.css";
 import { TMenuUIProps } from "./type";
 import { ModalOverlayUI } from "../modal-overlay/modal-overlay";
-import { MenuItemUI } from "../menu/menu-item/menu-item";
 import clsx from "clsx";
 import sectionsData from "../../../data/sections.json";
 import { Sections } from "../../../utils/types";
 import { useLocation } from "react-router-dom";
 import FocusLock from "react-focus-lock";
+import { HashLink } from "react-router-hash-link";
+import { NavLink } from "react-router-dom";
 
 export const MenuUI: FC<TMenuUIProps> = memo(({ onClose }) => {
   const location = useLocation();
@@ -41,7 +42,15 @@ export const MenuUI: FC<TMenuUIProps> = memo(({ onClose }) => {
         <nav className={styles.nav}>
           <ul className={styles.menuList}>
             <li className={styles.menuItem}>
-              <MenuItemUI label="Главная страница" path="/" onClick={onClose} />
+              <NavLink
+                to="/"
+                onClick={onClose}
+                className={({ isActive }) =>
+                  `${styles.menuLink} ${isActive ? styles.isActive : ""}`
+                }
+              >
+                Главная страница
+              </NavLink>
             </li>
             <li className={styles.menuItem}>
               <details open={isSectionsOpen}>
@@ -49,32 +58,51 @@ export const MenuUI: FC<TMenuUIProps> = memo(({ onClose }) => {
                 <ul className={clsx(styles.menuList, styles.subMenuList)}>
                   {sections.map((section) => (
                     <li key={section.id} className={styles.menuItem}>
-                      <MenuItemUI
-                        label={section.section}
-                        path={`/sections/${section.id}`}
+                      <NavLink
+                        className={({ isActive }) =>
+                          `${styles.menuLink} ${isActive ? styles.isActive : ""}`
+                        }
+                        to={`/sections/${section.id}`}
                         onClick={onClose}
-                      />
+                      >
+                        {section.section}
+                      </NavLink>
                     </li>
                   ))}
                 </ul>
               </details>
             </li>
             <li className={styles.menuItem}>
-              <MenuItemUI label="Команда" path="/team" onClick={onClose} />
+              <NavLink
+                to="/team"
+                onClick={onClose}
+                className={({ isActive }) =>
+                  `${styles.menuLink} ${isActive ? styles.isActive : ""}`
+                }
+              >
+                Команда
+              </NavLink>
             </li>
             <li className={styles.menuItem}>
-              <MenuItemUI
-                label="Полный список статей"
-                path="/all-articles"
+              <NavLink
+                to="/all-articles"
                 onClick={onClose}
-              />
+                className={({ isActive }) =>
+                  `${styles.menuLink} ${isActive ? styles.isActive : ""}`
+                }
+              >
+                Полный список статей
+              </NavLink>
             </li>
             <li className={styles.menuItem}>
-              <MenuItemUI
-                label="Вопросы и ответы"
-                path="/#faq"
+              <HashLink
+                smooth
+                to="/#faq"
                 onClick={onClose}
-              />
+                className={styles.menuLink}
+              >
+                Вопросы и ответы
+              </HashLink>
             </li>
           </ul>
         </nav>

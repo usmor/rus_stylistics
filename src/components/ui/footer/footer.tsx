@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import styles from "./footer.module.css";
 import clsx from "clsx";
-import { NavLink } from "react-router-dom";
 import { TFooterProps } from "./type";
+import { HashLink } from "react-router-hash-link";
 
 export const FooterUI: FC<TFooterProps> = ({ copyright }) => (
   <footer className={clsx(styles.footer)}>
@@ -10,24 +10,24 @@ export const FooterUI: FC<TFooterProps> = ({ copyright }) => (
       <h4 className={styles.footerQuestionsTitle}>Часто задаваемые вопросы</h4>
       <ul className={styles.footerQuestionsList}>
         <li className={styles.footerQuestionsListItem}>
-          <NavLink to="/#about" className={styles.footerLink}>
+          <HashLink smooth to="/#about" className={styles.footerLink}>
             О проекте
-          </NavLink>
+          </HashLink>
         </li>
         <li className={styles.footerQuestionsListItem}>
-          <NavLink to="/#who" className={styles.footerLink}>
+          <HashLink smooth to="/#who" className={styles.footerLink}>
             Кто разрабатывает Справочник?
-          </NavLink>
+          </HashLink>
         </li>
         <li className={styles.footerQuestionsListItem}>
-          <NavLink to="/#quote" className={styles.footerLink}>
+          <HashLink smooth to="/#quote" className={styles.footerLink}>
             Как ссылаться на материалы проекта?
-          </NavLink>
+          </HashLink>
         </li>
         <li className={styles.footerQuestionsListItem}>
-          <NavLink to="/#address" className={styles.footerLink}>
+          <HashLink smooth to="/#address" className={styles.footerLink}>
             Как связаться с редакцией?
-          </NavLink>
+          </HashLink>
         </li>
       </ul>
     </div>
@@ -35,19 +35,19 @@ export const FooterUI: FC<TFooterProps> = ({ copyright }) => (
     <nav className={styles.footerInfo}>
       <ul className={styles.footerInfoLinks}>
         <li className={styles.footerInfoLinksItem}>
-          <NavLink to="/" className={styles.footerLink}>
+          <HashLink smooth to="/" className={styles.footerLink}>
             Главная
-          </NavLink>
+          </HashLink>
         </li>
         <li className={styles.footerInfoLinksItem}>
-          <NavLink to="/#sections" className={styles.footerLink}>
+          <HashLink smooth to="/#sections" className={styles.footerLink}>
             Разделы
-          </NavLink>
+          </HashLink>
         </li>
         <li className={styles.footerInfoLinksItem}>
-          <NavLink to="/team" className={styles.footerLink}>
+          <HashLink smooth to="/team" className={styles.footerLink}>
             Команда
-          </NavLink>
+          </HashLink>
         </li>
       </ul>
 

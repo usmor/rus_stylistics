@@ -25,14 +25,4 @@
   --bg-color: var(--white);
   --header-bg-color: var(--green);
   --footer-bg-color: var(--green);
-
-  /* переменные, связанные с цветами фонов разделов */
-  --lexicon-bg-color: var(--green);
-  --gramm-forms-bg-color: var(--orange);
-  --syntax-bg-color: var(--violet);
-
-  /* переменные, связанные с карточками статей */
-  --card-border-color: var(--green);
-  --card-bg-color: var(--white);
-  --card-bg-hover-color: var(--light-grey);
 }

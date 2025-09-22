@@ -5,7 +5,7 @@ import { MenuProps } from "./type";
 
 const modalRoot = document.getElementById("menu");
 
-export const Menu: FC<MenuProps> = memo(({ onClose }) => {
+const Menu: FC<MenuProps> = memo(({ onClose }) => {
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       e.key === "Escape" && onClose();
@@ -22,3 +22,5 @@ export const Menu: FC<MenuProps> = memo(({ onClose }) => {
     modalRoot as HTMLDivElement,
   );
 });
+
+export default Menu;
