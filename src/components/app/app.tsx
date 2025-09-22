@@ -2,21 +2,24 @@ import styles from "./app.module.css";
 import { Header } from "../header/header";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { Footer } from "../footer/footer";
-import { Menu } from "../menu/menu";
-import { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
+import { NotFound404 } from "../../pages/not-found-404/not-found-404";
+
+const Menu = React.lazy(
+  () => import(/* webpackChunkName: "menu" */ "../menu/menu"),
+);
+
+const MainPage = React.lazy(
+  () =>
+    import(
+      /* webpackChunkName: "main-page" */ "../../pages/main-page/main-page"
+    ),
+);
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-
-  useEffect(() => {
-    if (location.hash === "#menu") {
-      setIsMenuOpen(true);
-    } else {
-      setIsMenuOpen(false);
-    }
-  }, [location.hash]);
 
   const handleMenuOpen = () => {
     navigate(`${location.pathname}${location.search}#menu`, { replace: true });
@@ -36,13 +39,15 @@ const App = () => {
     <div className={styles.app}>
       <Header onMenuClick={handleMenuOpen} />
       <main className={styles.content}>
-        <Routes>
-          <Route path="/" element={<div>Home Page</div>} />
-          <Route path="/search" element={<div>Search Page</div>} />
-          <Route path="*" element={<p>ошибка</p>}></Route>
-        </Routes>
+        <Suspense fallback={<div>Загрузка...</div>}>
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/search" element={<div>Search Page</div>} />
+            <Route path="*" element={<NotFound404 />} />
+          </Routes>
 
-        {isMenuOpen && <Menu onClose={handleMenuClose} />}
+          {isMenuOpen && <Menu onClose={handleMenuClose} />}
+        </Suspense>
       </main>
       <Footer />
     </div>

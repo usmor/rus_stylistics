@@ -34,10 +34,12 @@
     "@storybook/addon-webpack5-compiler-swc": "^4.0.1",
     "@storybook/react-webpack5": "^9.1.4",
     "@svgr/webpack": "^8.1.0",
+    "@types/material-ui": "^0.21.18",
     "@types/node": "^24.3.1",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
     "@types/react-router-dom": "^5.3.3",
+    "@types/react-router-hash-link": "^2.4.9",
     "@typescript-eslint/eslint-plugin": "^8.42.0",
     "@typescript-eslint/parser": "^8.42.0",
     "autoprefixer": "^10.4.21",
@@ -81,6 +83,9 @@
     "webpack-merge": "^6.0.1"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.2",
     "@reduxjs/toolkit": "^2.9.0",
     "clsx": "^2.1.1",
     "react": "^19.1.1",
@@ -88,6 +93,7 @@
     "react-focus-lock": "^2.13.6",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.8.2",
+    "react-router-hash-link": "^2.4.3",
     "redux": "^5.0.1"
   },
   "lint-staged": {
