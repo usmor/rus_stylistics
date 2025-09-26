@@ -46,3 +46,7 @@ ul,
 ol {
   list-style: none;
 }
+
+.italic-text {
+  font-style: italic;
+}

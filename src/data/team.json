@@ -1,0 +1,91 @@
+{
+  "team": [
+    {
+      "id": "yulia-kuvshinskaya",
+      "name": "Юлия Михайловна Кувшинская",
+      "email": "ykuvshinskaya@hse.ru",
+      "role": "leader",
+      "photo": "yulia-kuvshinskaya.jpg",
+      "tasks": "Идейный вдохновитель и куратор проекта"
+    },
+    {
+      "id": "elena-kartova",
+      "name": "Елена Картова",
+      "email": "",
+      "role": "author",
+      "photo": "",
+      "articles": [
+        {
+          "title": "Употребление дискурсивного слова <i>кстати</i>",
+          "link": "/syntax/upotreblenie-diskursivnogo-slova-kstati"
+        }
+      ]
+    },
+    {
+      "id": "yulia-danilova",
+      "name": "Юлия Данилова",
+      "email": "yusdanilova@edu.hse.ru",
+      "role": "author",
+      "photo": "yulia-danilova.jpg",
+      "articles": [
+        {
+          "title": "Употребление местоимений с частицей <i>-то</i>",
+          "link": "/grammar-forms/upotreblenie-mestoimeniy-s-chastitsey-to"
+        },
+        {
+          "title": "Употребление дискурсивного слова <i>кстати</i>",
+          "link": "/syntax/upotreblenie-diskursivnogo-slova-kstati"
+        },
+        {
+          "title": "<i>Мне</i> или <i>для меня</i>: дательный падеж или предлог <i>для</i>",
+          "link": "/grammar-forms/"
+        },
+        {
+          "title": "Употребление местоимений с частицей <i>-то</i>",
+          "link": "/grammar-forms/upotreblenie-mestoimeniy-s-chastitsey-to"
+        },
+        {
+          "title": "Употребление дискурсивного слова <i>кстати</i>",
+          "link": "/syntax/upotreblenie-diskursivnogo-slova-kstati"
+        },
+        {
+          "title": "<i>Мне</i> или <i>для меня</i>: дательный падеж или предлог <i>для</i>",
+          "link": "/grammar-forms/"
+        },
+        {
+          "title": "Употребление местоимений с частицей <i>-то</i>",
+          "link": "/grammar-forms/upotreblenie-mestoimeniy-s-chastitsey-to"
+        },
+        {
+          "title": "Употребление дискурсивного слова <i>кстати</i>",
+          "link": "/syntax/upotreblenie-diskursivnogo-slova-kstati"
+        },
+        {
+          "title": "<i>Мне</i> или <i>для меня</i>: дательный падеж или предлог <i>для</i>",
+          "link": "/grammar-forms/"
+        }
+      ]
+    },
+    {
+      "id": "anastasia-saunina",
+      "name": "Анастасия Саунина",
+      "email": "aasaunina@edu.hse.ru",
+      "role": "author",
+      "photo": "anastasia-saunina.jpg",
+      "articles": [
+        {
+          "title": "<i>Мне</i> или <i>для меня</i>: дательный падеж или предлог <i>для</i>",
+          "link": "/grammar-forms/"
+        }
+      ]
+    },
+    {
+      "id": "anna-lutsenko",
+      "name": "Анна Луценко",
+      "email": "aklutsenko@edu.hse.ru",
+      "role": "developer",
+      "photo": "anna-lutsenko.jpeg",
+      "tasks": "Специалист по разработке и сопровождению ползовательского интерфейса"
+    }
+  ]
+}

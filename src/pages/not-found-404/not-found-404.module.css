@@ -29,12 +29,11 @@
 .link {
   color: var(--green);
   font-weight: 700;
-  border-block-end: 1px solid transparent;
   cursor: pointer;
 }
 
 .link:hover {
-  border-block-end: 1px solid currentcolor;
+  color: var(--grey);
 }
 
 .link:focus {

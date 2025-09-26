@@ -8,3 +8,16 @@ export type TSection = {
 export interface Sections {
   sections: TSection[];
 }
+
+export type TTeamMember = {
+  id: string;
+  name: string;
+  email?: string;
+  role: "leader" | "author" | "developer";
+  photo?: string;
+  articles?: {
+    title: string;
+    link: string;
+  }[];
+  tasks?: string;
+};

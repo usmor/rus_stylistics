@@ -4,6 +4,7 @@ import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { Footer } from "../footer/footer";
 import React, { Suspense, useEffect, useState } from "react";
 import { NotFound404 } from "../../pages/not-found-404/not-found-404";
+import { ScrollToTop } from "../scroll-to-top/scroll-to-top";
 
 const Menu = React.lazy(
   () => import(/* webpackChunkName: "menu" */ "../menu/menu"),
@@ -13,6 +14,13 @@ const MainPage = React.lazy(
   () =>
     import(
       /* webpackChunkName: "main-page" */ "../../pages/main-page/main-page"
+    ),
+);
+
+const TeamPage = React.lazy(
+  () =>
+    import(
+      /* webpackChunkName: "team-page" */ "../../pages/team-page/team-page"
     ),
 );
 
@@ -40,10 +48,11 @@ const App = () => {
       <Header onMenuClick={handleMenuOpen} />
       <main className={styles.content}>
         <Suspense fallback={<div>Загрузка...</div>}>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<MainPage />} />
-            <Route path="/search" element={<div>Search Page</div>} />
             <Route path="*" element={<NotFound404 />} />
+            <Route path="/team" element={<TeamPage />} />
           </Routes>
 
           {isMenuOpen && <Menu onClose={handleMenuClose} />}
