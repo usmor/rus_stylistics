@@ -27,7 +27,7 @@ const TeamPage = React.lazy(
 const AllArticlesPage = React.lazy(
   () =>
     import(
-      /* webpackChunkName: "team-page" */ "../../pages/all-articles/all-articles"
+      /* webpackChunkName: "all-articles" */ "../../pages/all-articles/all-articles"
     ),
 );
 
