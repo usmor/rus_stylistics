@@ -1,23 +1,40 @@
-export type TSection = {
-  section: string;
-  id: string;
-  subsections: any[];
-  shortDescription: string;
-};
+import { SectionsColors } from "./constants";
 
-export interface Sections {
-  sections: TSection[];
+export interface HandbookData {
+  sections: Section[];
 }
 
-export type TTeamMember = {
+export interface Section {
+  section: string;
+  shortDescription: string;
+  id: string;
+  subsections: Subsection[];
+}
+
+export interface Subsection {
+  subsection: string;
+  articles: Article[];
+}
+
+export interface Article {
+  id: string;
+  title: string;
+  authorID: string;
+  tags: string[];
+  markUp: string;
+  sectionID: string;
+}
+
+export interface TeamData {
+  team: TeamMember[];
+}
+
+export interface TeamMember {
   id: string;
   name: string;
   email?: string;
   role: "leader" | "author" | "developer";
   photo?: string;
-  articles?: {
-    title: string;
-    link: string;
-  }[];
+  articles?: string[];
   tasks?: string;
-};
+}

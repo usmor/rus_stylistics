@@ -1,6 +1,5 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import styles from "./team-member-card.module.css";
-import clsx from "clsx";
 import { Link } from "react-router-dom";
 import { ITeamMemberCardUIProps } from "./type";
 
@@ -21,6 +20,7 @@ export const TeamMemberCardUI: FC<ITeamMemberCardUIProps> = ({
     <div
       className={styles.memberContainer}
       style={{ boxShadow: `0 0 20px ${colorVar}` }}
+      id={id}
     >
       <div className={styles.memberAvatarContainer}>
         {photo ? (
@@ -63,7 +63,7 @@ export const TeamMemberCardUI: FC<ITeamMemberCardUIProps> = ({
             <ul className={styles.memberArticles}>
               {visibleArticles.map((article, index) => (
                 <li key={index}>
-                  <Link to={article.link} className={styles.articleLink}>
+                  <Link to={article.id} className={styles.articleLink}>
                     <span dangerouslySetInnerHTML={{ __html: article.title }} />
                   </Link>
                 </li>
@@ -82,7 +82,7 @@ export const TeamMemberCardUI: FC<ITeamMemberCardUIProps> = ({
                 <ul className={styles.memberArticles}>
                   {hiddenArticles.map((article, index) => (
                     <li key={index}>
-                      <Link to={article.link} className={styles.articleLink}>
+                      <Link to={article.id} className={styles.articleLink}>
                         <span
                           dangerouslySetInnerHTML={{ __html: article.title }}
                         />

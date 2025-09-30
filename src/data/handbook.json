@@ -1,0 +1,153 @@
+{
+  "sections": [
+    {
+      "section": "Лексика",
+      "shortDescription": "О сложных случаях использования слов в различных контекстах",
+      "id": "lexicon",
+      "subsections": [
+        {
+          "subsection": "Паронимы",
+          "articles": [
+            {
+              "id": "predstavit-predostavit-znachenie-i-upotreblenie",
+              "title": "<span class='italicText'>Представить</span> – <span class='italicText'>предоставить</span>: значение и употребление",
+              "authorID": "aleksandra-kuzmina",
+              "tags": ["глаголы", "паронимы", "сочетаемость слов"],
+              "markUp": "predstavit-predostavit-znachenie-i-upotreblenie.tsx",
+              "sectionID": "lexicon"
+            }
+          ]
+        },
+        {
+          "subsection": "Слова-интенсификаторы",
+          "articles": [
+            {
+              "id": "stilistika-upotrebleniya-slov-intensifikatorov",
+              "title": "Стилистика употребления слов-интенсификаторов",
+              "authorID": "alena-sveparskaya",
+              "tags": ["наречия", "интенсификаторы", "усилители", "частицы"],
+              "markUp": "stilistika-upotrebleniya-slov-intensifikatorov.tsx",
+              "sectionID": "lexicon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Грамматические формы",
+      "id": "grammar-forms",
+      "shortDescription": "О структуре слова и грамматических значениях его частей",
+      "subsections": [
+        {
+          "subsection": "Местоимения",
+          "articles": [
+            {
+              "id": "upotreblenie-mestoimenij-s-chasticej-to",
+              "title": "Употребление местоимений с частицей <span class='italicText'>-то</span>",
+              "authorID": "yulia-danilova",
+              "tags": [
+                "неопределенные местоимения",
+                "местоимения",
+                "частица -то",
+                "частицы"
+              ],
+              "markUp": "upotreblenie-mestoimenij-s-chasticej-to.tsx",
+              "sectionID": "grammar-forms"
+            },
+            {
+              "id": "upotreblenie-opredelennyx-mestoimenij-ves-vse-kazhdyj-vsyakij",
+              "title": "Употребление определенных местоимений <span class='italicText'>весь</span>, <span class='italicText'>все</span>, <span class='italicText'>каждый</span>, <span class='italicText'>всякий</span>",
+              "authorID": "aleksandra-kuzmina",
+              "tags": [
+                "местоимения",
+                "определенные местоимения",
+                "квантификаторы"
+              ],
+              "markUp": "upotreblenie-opredelennyx-mestoimenij-ves-vse-kazhdyj-vsyakij.tsx",
+              "sectionID": "grammar-forms"
+            }
+          ]
+        },
+        {
+          "subsection": "Падежные формы",
+          "articles": [
+            {
+              "id": "mne-ili-dlya-menya-datelnyj-padezh-ili-predlog-dlya",
+              "title": "<span class='italicText'>Мне</span> или <span class='italicText'>для меня</span>: дательный падеж или предлог <span class='italicText'>для</span>",
+              "authorID": "anastasia-saunina",
+              "tags": [
+                "дательный падеж",
+                "предлог для",
+                "родительный падеж",
+                "предикатив",
+                "глагол",
+                "сказуемое",
+                "безличное предложение"
+              ],
+              "markUp": "mne-ili-dlya-menya-datelnyj-padezh-ili-predlog-dlya.tsx",
+              "sectionID": "grammar-forms"
+            }
+          ]
+        },
+        {
+          "subsection": "Глаголы",
+          "articles": [
+            {
+              "id": "upotreblenie-form-merit-meryat-muchit-muchat",
+              "title": "Употребление форм <span class='italicText'>мерить</span> – <span class='italicText'>мерять</span>, <span class='italicText'>мучить</span> - <span class='italicText'>мучать</span>",
+              "authorID": "aleksandra-kuzmina",
+              "tags": [
+                "глаголы",
+                "правописание",
+                "морфология",
+                "инфинитив",
+                "личные формы"
+              ],
+              "markUp": "upotreblenie-form-merit-meryat-muchit-muchat.tsx",
+              "sectionID": "grammar-forms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Синтаксис",
+      "id": "syntax",
+      "shortDescription": "О конструкциях, предложениях и способах их связи в дискурсе",
+      "subsections": [
+        {
+          "subsection": "Дискурсивные слова и коннекторы",
+          "articles": [
+            {
+              "id": "upotreblenie-diskursivnogo-slova-kstati",
+              "title": "Употребление дискурсивного слова <span class='italicText'>кстати</span>",
+              "authorID": "elena-kartova",
+              "tags": [
+                "дискурсивные слова",
+                "коннекторы",
+                "вводные слова",
+                "синтаксис",
+                "дискурс"
+              ],
+              "markUp": "upotreblenie-diskursivnogo-slova-kstati.tsx",
+              "sectionID": "syntax"
+            }
+          ]
+        },
+        {
+          "subsection": "Союзы",
+          "articles": [
+            {
+              "id": "osobennosti-upotrebleniya-nekotoryx-soyuzov-so-znacheniem-ustupki",
+              "title": "Особенности употребления некоторых союзов со значением уступки",
+              "authorID": "maria-izosimova",
+              "tags": ["союзы", "уступка", "сложные предложения", "синтаксис"],
+              "markUp": "osobennosti-upotrebleniya-nekotoryx-soyuzov-so-znacheniem-ustupki.tsx",
+              "sectionID": "syntax"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

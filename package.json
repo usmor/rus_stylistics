@@ -83,9 +83,6 @@
     "webpack-merge": "^6.0.1"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
-    "@mui/material": "^7.3.2",
     "@reduxjs/toolkit": "^2.9.0",
     "clsx": "^2.1.1",
     "react": "^19.1.1",

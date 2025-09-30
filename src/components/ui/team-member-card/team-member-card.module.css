@@ -12,8 +12,8 @@
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
-  width: clamp(6.25rem, 1.17rem + 22.59vw, 15.63rem);
-  height: clamp(6.25rem, 1.17rem + 22.59vw, 15.63rem);
+  width: clamp(6.25rem, 0.49rem + 25.6vw, 16.88rem);
+  height: clamp(6.25rem, 0.49rem + 25.6vw, 16.88rem);
   overflow: hidden;
   aspect-ratio: 1 / 1;
 }

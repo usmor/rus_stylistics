@@ -14,12 +14,7 @@
       "email": "",
       "role": "author",
       "photo": "",
-      "articles": [
-        {
-          "title": "Употребление дискурсивного слова <i>кстати</i>",
-          "link": "/syntax/upotreblenie-diskursivnogo-slova-kstati"
-        }
-      ]
+      "articles": ["upotreblenie-diskursivnogo-slova-kstati"]
     },
     {
       "id": "yulia-danilova",
@@ -27,44 +22,7 @@
       "email": "yusdanilova@edu.hse.ru",
       "role": "author",
       "photo": "yulia-danilova.jpg",
-      "articles": [
-        {
-          "title": "Употребление местоимений с частицей <i>-то</i>",
-          "link": "/grammar-forms/upotreblenie-mestoimeniy-s-chastitsey-to"
-        },
-        {
-          "title": "Употребление дискурсивного слова <i>кстати</i>",
-          "link": "/syntax/upotreblenie-diskursivnogo-slova-kstati"
-        },
-        {
-          "title": "<i>Мне</i> или <i>для меня</i>: дательный падеж или предлог <i>для</i>",
-          "link": "/grammar-forms/"
-        },
-        {
-          "title": "Употребление местоимений с частицей <i>-то</i>",
-          "link": "/grammar-forms/upotreblenie-mestoimeniy-s-chastitsey-to"
-        },
-        {
-          "title": "Употребление дискурсивного слова <i>кстати</i>",
-          "link": "/syntax/upotreblenie-diskursivnogo-slova-kstati"
-        },
-        {
-          "title": "<i>Мне</i> или <i>для меня</i>: дательный падеж или предлог <i>для</i>",
-          "link": "/grammar-forms/"
-        },
-        {
-          "title": "Употребление местоимений с частицей <i>-то</i>",
-          "link": "/grammar-forms/upotreblenie-mestoimeniy-s-chastitsey-to"
-        },
-        {
-          "title": "Употребление дискурсивного слова <i>кстати</i>",
-          "link": "/syntax/upotreblenie-diskursivnogo-slova-kstati"
-        },
-        {
-          "title": "<i>Мне</i> или <i>для меня</i>: дательный падеж или предлог <i>для</i>",
-          "link": "/grammar-forms/"
-        }
-      ]
+      "articles": ["upotreblenie-mestoimenij-s-chasticej-to"]
     },
     {
       "id": "anastasia-saunina",
@@ -72,12 +30,7 @@
       "email": "aasaunina@edu.hse.ru",
       "role": "author",
       "photo": "anastasia-saunina.jpg",
-      "articles": [
-        {
-          "title": "<i>Мне</i> или <i>для меня</i>: дательный падеж или предлог <i>для</i>",
-          "link": "/grammar-forms/"
-        }
-      ]
+      "articles": ["mne-ili-dlya-menya-datelnyj-padezh-ili-predlog-dlya"]
     },
     {
       "id": "anna-lutsenko",
@@ -85,7 +38,37 @@
       "email": "aklutsenko@edu.hse.ru",
       "role": "developer",
       "photo": "anna-lutsenko.jpeg",
-      "tasks": "Специалист по разработке и сопровождению ползовательского интерфейса"
+      "tasks": "Специалист по разработке и сопровождению пользовательского интерфейса"
+    },
+    {
+      "id": "alena-sveparskaya",
+      "name": "Алена Свепарская",
+      "email": "aasveparskaya_1@edu.hse.ru",
+      "role": "author",
+      "photo": "alena-sveparskaya.jpg",
+      "articles": ["stilistika-upotrebleniya-slov-intensifikatorov"]
+    },
+    {
+      "id": "aleksandra-kuzmina",
+      "name": "Александра Кузьмина",
+      "email": "",
+      "role": "author",
+      "photo": "",
+      "articles": [
+        "predstavit-predostavit-znachenie-i-upotreblenie",
+        "upotreblenie-form-merit-meryat-muchit-muchat",
+        "upotreblenie-opredelennyx-mestoimenij-ves-vse-kazhdyj-vsyakij"
+      ]
+    },
+    {
+      "id": "maria-izosimova",
+      "name": "Мария Изосимова",
+      "email": "",
+      "role": "author",
+      "photo": "",
+      "articles": [
+        "osobennosti-upotrebleniya-nekotoryx-soyuzov-so-znacheniem-ustupki"
+      ]
     }
   ]
 }

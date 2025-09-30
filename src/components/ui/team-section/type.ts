@@ -1,6 +1,6 @@
-import { TTeamMember } from "../../../utils/types";
+import { TeamMember } from "../../../utils/types";
 
 export interface ITeamSection {
   title: string;
-  members: TTeamMember[];
+  members: TeamMember[];
 }

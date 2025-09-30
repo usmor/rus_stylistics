@@ -1,13 +1,14 @@
 import { FC } from "react";
 import styles from "./main-page.module.css";
 import { Link } from "react-router-dom";
-import sectionsData from "../../data/sections.json";
-import { Sections } from "../../utils/types";
 import clsx from "clsx";
 import SEO from "../../components/seo/seo";
+import { useSelector } from "react-redux";
+import { RootState } from "../../services/store";
+import { selectSections } from "../../services/handbookSlice/slice";
 
 const MainPage: FC = () => {
-  const { sections } = sectionsData as Sections;
+  const sections = useSelector((state: RootState) => selectSections(state));
 
   return (
     <>
@@ -57,7 +58,7 @@ const MainPage: FC = () => {
           {sections.map((section) => (
             <li key={section.id} className={styles.tableListItem}>
               <Link
-                to={`/sections/${section.id}`}
+                to={`/section-${section.id}`}
                 className={styles.sectionCard}
               >
                 <h3 className={styles.sectionCardTitle}>{section.section}</h3>

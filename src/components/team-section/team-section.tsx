@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { TeamSectionUI } from "../ui/team-section/team-section";
-import teamData from "../../data/team.json";
-import { TTeamMember } from "../../utils/types";
+import { useSelector } from "react-redux";
+import { selectTeamByRole } from "../../services/teamSlice/slice";
 
 interface TeamSectionProps {
   role: "developer" | "author" | "leader";
@@ -9,12 +9,7 @@ interface TeamSectionProps {
 }
 
 export const TeamSection: FC<TeamSectionProps> = ({ role, title }) => {
-  const members: TTeamMember[] = teamData.team.map((member) => ({
-    ...member,
-    role: member.role as "developer" | "author" | "leader",
-  }));
-
-  const filteredMembers = members.filter((member) => member.role === role);
+  const filteredMembers = useSelector(selectTeamByRole(role));
 
   return <TeamSectionUI title={title} members={filteredMembers} />;
 };

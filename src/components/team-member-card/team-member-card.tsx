@@ -1,17 +1,25 @@
 import React, { FC, memo } from "react";
 import { TeamMemberCardUI } from "../ui/team-member-card/team-member-card";
-import { TTeamMember } from "../../utils/types";
-import clsx from "clsx";
+import { TeamMember } from "../../utils/types";
+import { TeamTypesColors } from "../../utils/constants";
+import { useSelector } from "react-redux";
+import { selectArticlesByAuthor } from "../../services/handbookSlice/slice";
+import { RootState } from "../../services/store";
 
-interface ITeamMemberCardProps extends TTeamMember {}
+interface ITeamMemberCardProps extends TeamMember {}
 
 export const TeamMemberCard: FC<ITeamMemberCardProps> = memo((props) => {
-  const { role } = props;
+  const { role, id } = props;
 
-  const colorForRole = {
-    leader: "orange",
-    author: "green",
-    developer: "violet",
-  };
-  return <TeamMemberCardUI {...props} color={colorForRole[role]} />;
+  const articlesData = useSelector((state: RootState) =>
+    selectArticlesByAuthor(state, id),
+  );
+
+  return (
+    <TeamMemberCardUI
+      {...props}
+      articles={articlesData}
+      color={TeamTypesColors[role]}
+    />
+  );
 });

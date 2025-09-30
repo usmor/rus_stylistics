@@ -33,6 +33,10 @@
   cursor: pointer;
 }
 
+.link {
+  cursor: pointer;
+}
+
 .icon {
   display: block;
   width: 100%;
@@ -70,6 +74,22 @@
 
 .navLink:focus-visible .icon {
   fill: var(--white);
+}
+
+.link:hover .title {
+  color: var(--grey);
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: none;
+}
+
+.link:focus-visible .title {
+  color: var(--white);
 }
 
 @media (width <= 425px) {
