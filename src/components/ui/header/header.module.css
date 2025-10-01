@@ -94,7 +94,7 @@
 
 @media (width <= 425px) {
   .header {
-    padding-inline: clamp(0.63rem, -0.33rem + 4.76vw, 0.94rem);
+    padding-inline: 10px;
     padding-block: 30px 10px;
   }
 }

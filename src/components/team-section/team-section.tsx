@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, memo } from "react";
 import { TeamSectionUI } from "../ui/team-section/team-section";
 import { useSelector } from "react-redux";
 import { selectTeamByRole } from "../../services/teamSlice/slice";
@@ -8,8 +8,8 @@ interface TeamSectionProps {
   title: string;
 }
 
-export const TeamSection: FC<TeamSectionProps> = ({ role, title }) => {
+export const TeamSection: FC<TeamSectionProps> = memo(({ role, title }) => {
   const filteredMembers = useSelector(selectTeamByRole(role));
 
   return <TeamSectionUI title={title} members={filteredMembers} />;
-};
+});

@@ -31,6 +31,13 @@ const AllArticlesPage = React.lazy(
     ),
 );
 
+const SectionPage = React.lazy(
+  () =>
+    import(
+      /* webpackChunkName: "section-page" */ "../../pages/section-page/section-page"
+    ),
+);
+
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
@@ -61,8 +68,8 @@ const App = () => {
             <Route path="*" element={<NotFound404 />} />
             <Route path="/team" element={<TeamPage />} />
             <Route path="/all-articles" element={<AllArticlesPage />} />
+            <Route path="/sections/:id" element={<SectionPage />} />
           </Routes>
-
           {isMenuOpen && <Menu onClose={handleMenuClose} />}
         </Suspense>
       </main>

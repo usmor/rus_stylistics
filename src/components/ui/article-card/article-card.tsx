@@ -3,7 +3,7 @@ import styles from "./article-card.module.css";
 import { Link } from "react-router-dom";
 import { TArticleCard } from "./type";
 
-export const ArticleCard: FC<TArticleCard> = ({
+export const ArticleCardUI: FC<TArticleCard> = ({
   title,
   id,
   author,

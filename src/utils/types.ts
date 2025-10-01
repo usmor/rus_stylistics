@@ -1,5 +1,3 @@
-import { SectionsColors } from "./constants";
-
 export interface HandbookData {
   sections: Section[];
 }
@@ -7,9 +5,14 @@ export interface HandbookData {
 export interface Section {
   section: string;
   shortDescription: string;
+  description: DescriptionBlock[];
   id: string;
   subsections: Subsection[];
 }
+
+export type DescriptionBlock =
+  | { type: "paragraph"; text: string }
+  | { type: "list"; items: string[] };
 
 export interface Subsection {
   subsection: string;

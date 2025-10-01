@@ -7,7 +7,7 @@ interface HandbookState {
 }
 
 const initialState: HandbookState = {
-  handbook: handbookJson,
+  handbook: handbookJson as HandbookData,
 };
 
 export const handbookSlice = createSlice({
