@@ -39,36 +39,6 @@
       "role": "developer",
       "photo": "anna-lutsenko.jpeg",
       "tasks": "Специалист по разработке и сопровождению пользовательского интерфейса"
-    },
-    {
-      "id": "alena-sveparskaya",
-      "name": "Алена Свепарская",
-      "email": "aasveparskaya_1@edu.hse.ru",
-      "role": "author",
-      "photo": "alena-sveparskaya.jpg",
-      "articles": ["stilistika-upotrebleniya-slov-intensifikatorov"]
-    },
-    {
-      "id": "aleksandra-kuzmina",
-      "name": "Александра Кузьмина",
-      "email": "",
-      "role": "author",
-      "photo": "",
-      "articles": [
-        "predstavit-predostavit-znachenie-i-upotreblenie",
-        "upotreblenie-form-merit-meryat-muchit-muchat",
-        "upotreblenie-opredelennyx-mestoimenij-ves-vse-kazhdyj-vsyakij"
-      ]
-    },
-    {
-      "id": "maria-izosimova",
-      "name": "Мария Изосимова",
-      "email": "",
-      "role": "author",
-      "photo": "",
-      "articles": [
-        "osobennosti-upotrebleniya-nekotoryx-soyuzov-so-znacheniem-ustupki"
-      ]
     }
   ]
 }
