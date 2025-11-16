@@ -1,0 +1,48 @@
+.meta {
+  display: flex;
+  grid-area: meta;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: clamp(1.38rem, 0.58rem + 3.39vw, 2.75rem);
+  line-height: 1.2;
+}
+
+.tags {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5px 10px;
+  margin-block-end: 10px;
+}
+
+.tag {
+  color: rgb(0 0 0 / 50%);
+  font-size: clamp(0.75rem, 0.61rem + 0.6vw, 1rem);
+  line-height: 1.32;
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+
+.author {
+  font-size: clamp(0.75rem, 0.61rem + 0.6vw, 1rem);
+  line-height: 1.32;
+}
+
+.authorLink {
+  text-decoration: none;
+  border-block-end: 1px solid transparent;
+  cursor: pointer;
+}
+
+.authorLink:hover {
+  border-block-end: 1px solid currentcolor;
+}
+
+@media (width < 768px) {
+  .title {
+    margin-bottom: 20px;
+  }
+}

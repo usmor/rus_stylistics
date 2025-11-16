@@ -1,0 +1,53 @@
+.tableOfContent {
+  position: sticky;
+  top: 20px;
+  z-index: 1000;
+  grid-area: toc;
+}
+
+.headingsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-inline-start: 5px solid var(--black, #000000);
+}
+
+.headingItem {
+  margin-inline-start: clamp(0.94rem, 0.43rem + 2.26vw, 1.88rem);
+  font-size: clamp(0.75rem, 0.61rem + 0.6vw, 1rem);
+  line-height: 1.32;
+  text-transform: lowercase;
+}
+
+.headingLink {
+  text-decoration: none;
+  border-block-end: 1px solid transparent;
+  cursor: pointer;
+}
+
+.headingLink:hover {
+  border-block-end: 1px solid currentcolor;
+}
+
+.headingLink:focus {
+  outline: none;
+}
+
+.headingLink:active {
+  color: var(--orange);
+  border-block-end: none;
+}
+
+.headingLink:focus-visible {
+  color: var(--orange);
+  outline: none;
+}
+
+@media (width <= 768px) {
+  .tableOfContent {
+    position: static;
+    z-index: 0;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+}

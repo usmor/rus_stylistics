@@ -1,0 +1,32 @@
+.link {
+  color: var(--green);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.link::before {
+  content: "[";
+}
+
+.link::after {
+  content: "]";
+}
+
+.link:hover {
+  color: var(--grey);
+  font-weight: 600;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:active {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.link:focus-visible {
+  color: var(--black);
+  outline: none;
+}

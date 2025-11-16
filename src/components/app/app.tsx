@@ -2,7 +2,7 @@ import styles from "./app.module.css";
 import { Header } from "../header/header";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { Footer } from "../footer/footer";
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useMemo, useState } from "react";
 import NotFound404 from "../../pages/not-found-404/not-found-404";
 import { ScrollToTop } from "../scroll-to-top/scroll-to-top";
 
@@ -38,24 +38,30 @@ const SectionPage = React.lazy(
     ),
 );
 
+const ArticlePage = React.lazy(
+  () =>
+    import(
+      /* webpackChunkName: "article-page" */ "../../pages/article-page/article-page"
+    ),
+);
+
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
   const handleMenuOpen = () => {
-    navigate(`${location.pathname}${location.search}#menu`, { replace: true });
+    setIsMenuOpen(true);
   };
 
   const handleMenuClose = () => {
-    if (location.hash === "#menu") {
-      navigate(`${location.pathname}${location.search}`, { replace: true });
-    }
+    setIsMenuOpen(false);
   };
 
+  // Закрываем меню при изменении маршрута
   useEffect(() => {
-    setIsMenuOpen(location.hash === "#menu");
-  }, [location.hash]);
+    setIsMenuOpen(false);
+  }, [location.pathname]);
 
   return (
     <div className={styles.app}>
@@ -69,6 +75,7 @@ const App = () => {
             <Route path="/team" element={<TeamPage />} />
             <Route path="/all-articles" element={<AllArticlesPage />} />
             <Route path="/sections/:id" element={<SectionPage />} />
+            <Route path="/articles/:id" element={<ArticlePage />} />
           </Routes>
           {isMenuOpen && <Menu onClose={handleMenuClose} />}
         </Suspense>

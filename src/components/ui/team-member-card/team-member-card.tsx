@@ -63,7 +63,10 @@ export const TeamMemberCardUI: FC<ITeamMemberCardUIProps> = ({
             <ul className={styles.memberArticles}>
               {visibleArticles.map((article, index) => (
                 <li key={index}>
-                  <Link to={article.id} className={styles.articleLink}>
+                  <Link
+                    to={`/articles/${article.id}`}
+                    className={styles.articleLink}
+                  >
                     <span dangerouslySetInnerHTML={{ __html: article.title }} />
                   </Link>
                 </li>

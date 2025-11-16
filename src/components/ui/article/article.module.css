@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  grid-area: content;
+  flex-direction: column;
+  gap: 50px;
+  margin-block-start: 50px;
+}
+
+@media (width <= 768px) {
+  .content {
+    gap: 30px;
+    margin-block-start: 30px;
+  }
+}

@@ -11,7 +11,7 @@ export const ArticleCardUI: FC<TArticleCard> = ({
   color,
 }) => {
   return (
-    <Link to={id} className={styles.articleCardLink}>
+    <Link to={`/articles/${id}`} className={styles.articleCardLink}>
       <div
         className={styles.articleCard}
         style={{ borderInlineEndColor: `var(--${color})` }}

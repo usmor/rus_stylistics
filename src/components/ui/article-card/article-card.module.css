@@ -49,7 +49,7 @@
 }
 
 .tag {
-  color: rgb(0 0 0 / 40%);
+  color: rgb(0 0 0 / 50%);
   font-size: clamp(0.75rem, 0.61rem + 0.6vw, 1rem);
   line-height: 1.2;
   text-decoration: none;
