@@ -67,15 +67,21 @@ npm run storybook
 
 ## Команда проекта
 
-**Руководител проекта**
+**Руководитель проекта**
 
 Юлия Михайловна Кувшинская
 
 - почта: ykuvshinskaya@hse.ru, kjulia4@yandex.ru
 
-**Разработчики**:
+**Разработчик**:
 
 Анна Луценко
 
-- github: usmor,
+- github: usmor
 - почта: aklustenko@edu.hse.ru
+
+**Дизайнер**:
+
+Анастасия Гончарова
+
+- Telegram: @avg_reu
