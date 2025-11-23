@@ -2,7 +2,7 @@ import styles from "./app.module.css";
 import { Header } from "../header/header";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { Footer } from "../footer/footer";
-import React, { Suspense, useEffect, useMemo, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import NotFound404 from "../../pages/not-found-404/not-found-404";
 import { ScrollToTop } from "../scroll-to-top/scroll-to-top";
 
