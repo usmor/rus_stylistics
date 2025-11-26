@@ -57,7 +57,8 @@ ol {
 }
 
 @media (width <= 768px) {
-  p {
+  p,
+  span {
     font-size: 14px;
   }
 }

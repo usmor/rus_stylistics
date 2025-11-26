@@ -151,7 +151,7 @@
 
 .questionSummaryTitle {
   font-weight: 600;
-  font-size: 20px;
+  font-size: clamp(1rem, 0.78rem + 1.14vw, 1.5rem);
   font-style: normal;
   line-height: 1.2;
   border-block-end: 2px solid transparent;
