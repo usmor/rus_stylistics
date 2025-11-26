@@ -1,0 +1,29 @@
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.textBlockTitle {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (width < 768px) {
+  .textBlockTitle {
+    font-size: 16px;
+  }
+
+  .content {
+    gap: 14px;
+  }
+}

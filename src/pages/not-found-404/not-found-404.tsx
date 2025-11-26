@@ -2,7 +2,7 @@ import { FC } from "react";
 import { Link } from "react-router-dom";
 import styles from "./not-found-404.module.css";
 
-export const NotFound404: FC = () => (
+const NotFound404: FC = () => (
   <div className={styles.errorContainer}>
     <div className={styles.errorContent}>
       <h2 className={styles.title}>Ошибка 404</h2>
@@ -25,3 +25,5 @@ export const NotFound404: FC = () => (
     </div>
   </div>
 );
+
+export default NotFound404;

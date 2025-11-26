@@ -1,0 +1,31 @@
+.questionBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-inline-start: 50px;
+}
+
+.questionBlockTitle {
+  display: inline-block;
+  width: fit-content;
+  padding: 4px;
+  color: var(--accent-section-text-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  background-color: var(--accent-section-bg-color);
+}
+
+@media (width < 768px) {
+  .questionBlock {
+    margin-inline-start: 30px;
+  }
+
+  .questionBlockTitle {
+    font-size: 16px;
+  }
+
+  .content {
+    gap: 14px;
+  }
+}

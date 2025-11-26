@@ -12,7 +12,7 @@
   --main-font: "Inter-Variable";
   --main-text-color: var(--black);
   --path-link-text-color: var(--grey);
-  --tag-link-text-color: var(--grey);
+  --tag-text-color: var(--grey);
   --main-font-weight: 400;
   --title-font-weight: 600;
   --accent-section-text-color: var(--white);

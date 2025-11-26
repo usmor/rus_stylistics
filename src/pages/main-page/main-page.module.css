@@ -22,7 +22,6 @@
 .paragraphLink {
   color: var(--green);
   font-weight: 700;
-  border-block-end: 1px solid transparent;
   cursor: pointer;
 }
 
@@ -35,7 +34,8 @@
 }
 
 .paragraphLink:hover {
-  border-block-end: 1px solid currentcolor;
+  color: var(--grey);
+  font-weight: 600;
 }
 
 .paragraphLink:focus {
@@ -44,7 +44,7 @@
 
 .paragraphLink:active {
   color: var(--black);
-  border-block-end: none;
+  font-weight: 600;
 }
 
 .paragraphLink:focus-visible {
@@ -100,6 +100,15 @@
   border-block-end: 2px dashed transparent;
 }
 
+.sectionCard:focus {
+  outline: none;
+}
+
+.sectionCard:focus-visible .sectionCardTitle {
+  border-block-end: 2px dashed currentcolor;
+  outline: none;
+}
+
 .sectionCard:hover .sectionCardTitle {
   border-block-end: 2px dashed currentcolor;
 }
@@ -145,6 +154,19 @@
   font-size: 20px;
   font-style: normal;
   line-height: 1.2;
+  border-block-end: 2px solid transparent;
+}
+
+.questionSummary:focus {
+  outline: none;
+}
+
+.questionSummary:focus-visible {
+  outline: none;
+}
+
+.questionSummary:focus-visible .questionSummaryTitle {
+  border-block-end: 2px solid currentcolor;
 }
 
 .questionAnswer {

@@ -3,16 +3,17 @@ import styles from "./menu.module.css";
 import { TMenuUIProps } from "./type";
 import { ModalOverlayUI } from "../modal-overlay/modal-overlay";
 import clsx from "clsx";
-import sectionsData from "../../../data/sections.json";
-import { Sections } from "../../../utils/types";
+import { selectSections } from "../../../services/handbookSlice/slice";
 import { useLocation } from "react-router-dom";
 import FocusLock from "react-focus-lock";
 import { HashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { RootState } from "../../../services/store";
 
 export const MenuUI: FC<TMenuUIProps> = memo(({ onClose }) => {
   const location = useLocation();
-  const { sections } = sectionsData as Sections;
+  const sections = useSelector((state: RootState) => selectSections(state));
   const [isSectionsOpen, setIsSectionsOpen] = useState(false);
 
   useEffect(() => {

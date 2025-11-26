@@ -1,0 +1,13 @@
+.membersType {
+  margin-block-end: clamp(1.88rem, 1.2rem + 3.01vw, 3.13rem);
+  font-weight: 600;
+  font-size: clamp(20px, 16px + 1vw, 30px);
+  font-size: clamp(1.25rem, 1rem + 1vw, 1.88rem);
+  line-height: 1.2;
+}
+
+.membersList {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.25rem, 0.23rem + 4.52vw, 3.13rem);
+}

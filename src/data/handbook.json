@@ -1,0 +1,116 @@
+{
+  "sections": [
+    {
+      "section": "Лексика",
+      "shortDescription": "О сложных случаях использования слов в различных контекстах",
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "В данном разделе рассматриваются различные виды лексических ошибок:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "смешение синонимов, паронимов, антонимов;",
+            "нарушения сочетаемости слов;",
+            "сужение и расширение значений слов."
+          ]
+        }
+      ],
+      "id": "lexicon",
+      "subsections": []
+    },
+    {
+      "section": "Грамматические формы",
+      "id": "grammar-forms",
+      "shortDescription": "О структуре слова и грамматических значениях его частей",
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Данный раздел посвящен трудным случаям образования и употребления грамматических форм. Статьи этого блока сгруппированы по частям речи."
+        }
+      ],
+      "subsections": [
+        {
+          "subsection": "Местоимения",
+          "articles": [
+            {
+              "id": "upotreblenie-mestoimenij-s-chasticej-to",
+              "title": "Употребление местоимений с частицей <span class='italicText'>-то</span>",
+              "authorID": "yulia-danilova",
+              "tags": [
+                "неопределенные местоимения",
+                "местоимения",
+                "частица -то",
+                "частицы"
+              ],
+              "markUp": "upotreblenie-mestoimenij-s-chasticej-to.tsx",
+              "sectionID": "grammar-forms"
+            }
+          ]
+        },
+        {
+          "subsection": "Падежные формы",
+          "articles": [
+            {
+              "id": "mne-ili-dlya-menya-datelnyj-padezh-ili-predlog-dlya",
+              "title": "<span class='italicText'>Мне</span> или <span class='italicText'>для меня</span>: дательный падеж или предлог <span class='italicText'>для</span>",
+              "authorID": "anastasia-saunina",
+              "tags": [
+                "дательный падеж",
+                "предлог для",
+                "родительный падеж",
+                "предикатив",
+                "глагол",
+                "сказуемое",
+                "безличное предложение"
+              ],
+              "markUp": "mne-ili-dlya-menya-datelnyj-padezh-ili-predlog-dlya.tsx",
+              "sectionID": "grammar-forms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Синтаксис",
+      "id": "syntax",
+      "shortDescription": "О конструкциях, предложениях и способах их связи в дискурсе",
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Статьи данного раздела охватывают широкий пласт проблем, возникающих при построении связанного текста:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "употребление словосочетаний и конструкций;",
+            "построение предложений и дискурса в целом;",
+            "использование слов, организующие дискурс."
+          ]
+        }
+      ],
+      "subsections": [
+        {
+          "subsection": "Дискурсивные слова и коннекторы",
+          "articles": [
+            {
+              "id": "upotreblenie-diskursivnogo-slova-kstati",
+              "title": "Употребление дискурсивного слова <span class='italicText'>кстати</span>",
+              "authorID": "elena-kartova",
+              "tags": [
+                "дискурсивные слова",
+                "коннекторы",
+                "вводные слова",
+                "синтаксис",
+                "дискурс"
+              ],
+              "markUp": "upotreblenie-diskursivnogo-slova-kstati.tsx",
+              "sectionID": "syntax"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

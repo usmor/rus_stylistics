@@ -1,0 +1,205 @@
+.memberContainer {
+  display: flex;
+  gap: clamp(1.56rem, -0.24rem + 7.7vw, 4.69rem);
+  width: 95%;
+  max-width: 1200px;
+  padding: clamp(0.63rem, 0.06rem + 2.84vw, 1.88rem);
+  box-shadow: 0 0 20px var(--grey);
+}
+
+.memberAvatarContainer {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: clamp(6.25rem, 0.49rem + 25.6vw, 16.88rem);
+  height: clamp(6.25rem, 0.49rem + 25.6vw, 16.88rem);
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.memberProfilePicture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  stroke-width: 2;
+}
+
+.icon path {
+  fill: var(--grey);
+}
+
+.memberInfoName {
+  margin-block-end: clamp(0.63rem, 0.29rem + 1.5vw, 1.25rem);
+  font-weight: 600;
+  font-size: clamp(1.13rem, 0.69rem + 2vw, 1.88rem);
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.memberInfoContact {
+  display: inline-block;
+  font-size: clamp(0.88rem, 0.79rem + 0.37vw, 1.13rem);
+  font-style: normal;
+  line-height: 1.2;
+  text-decoration: none;
+  word-break: break-all;
+  border-block-end: 1px solid transparent;
+  cursor: pointer;
+}
+
+.memberInfoContact:hover {
+  border-block-end: 1px solid currentcolor;
+}
+
+.memberInfoContact:focus {
+  outline: none;
+}
+
+.memberInfoContact:active {
+  color: var(--grey);
+  font-weight: 600;
+  border-block-end: none;
+}
+
+.memberInfoContact:focus-visible {
+  border-block-end: 1px solid currentcolor;
+  outline: none;
+}
+
+.tasks {
+  margin-block-start: clamp(1.25rem, 0.57rem + 3.01vw, 2.5rem);
+  font-size: clamp(0.88rem, 0.79rem + 0.37vw, 1.13rem);
+}
+
+.articlesListTitle {
+  margin-block: clamp(1.25rem, 0.57rem + 3.01vw, 2.5rem) 20px;
+  font-weight: 600;
+  font-size: clamp(1rem, 0.86rem + 0.62vw, 1.25rem);
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.memberArticles {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.63rem, 0.46rem + 0.75vw, 0.94rem);
+}
+
+.articleLink {
+  font-size: clamp(0.88rem, 0.79rem + 0.37vw, 1.13rem);
+  font-style: normal;
+  line-height: 1.2;
+  text-decoration: none;
+  border-block-end: 1px solid transparent;
+}
+
+.articleLink:hover {
+  border-block-end: 1px solid currentcolor;
+}
+
+.articleLink:focus {
+  outline: none;
+}
+
+.articleLink:active {
+  color: var(--grey);
+  font-weight: 600;
+  border-block-end: none;
+}
+
+.articleLink:focus-visible {
+  border-block-end: 1px solid currentcolor;
+  outline: none;
+}
+
+.detailsWrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-block-start: clamp(1.25rem, 0.57rem + 3.01vw, 2.5rem);
+}
+
+.detailsWrapper[open] {
+  margin-block-start: clamp(0.63rem, 0.46rem + 0.75vw, 0.94rem);
+}
+
+.moreArticles {
+  color: var(--grey);
+  font-weight: 600;
+  list-style: none;
+  cursor: pointer;
+}
+
+.detailsWrapper[open] .moreArticles::after {
+  display: block;
+  margin-block-start: 10px;
+}
+
+.hideText {
+  display: none;
+}
+
+.showText {
+  display: inline;
+}
+
+.detailsWrapper span:hover {
+  color: var(--grey);
+}
+
+.detailsWrapper span:focus {
+  outline: none;
+}
+
+.detailsWrapper span:active {
+  color: var(--black);
+  border-block-end: none;
+}
+
+.detailsWrapper span:focus-visible {
+  color: var(--black);
+  outline: none;
+}
+
+.detailsWrapper[open] .showText {
+  display: none;
+}
+
+.detailsWrapper[open] .hideText {
+  display: block;
+  margin-block-start: 10px;
+}
+
+@media (width <= 850px) {
+  .memberContainer {
+    width: 100%;
+  }
+}
+
+@media (width <= 425px) {
+  .memberContainer {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .memberInfoContact {
+    margin-block: 10px;
+  }
+}
+
+@media (width <= 375px) {
+  .memberInfoContact {
+    border-block-end: none;
+  }
+
+  .memberInfoContact:hover {
+    text-decoration: 1px solid currentcolor;
+  }
+}

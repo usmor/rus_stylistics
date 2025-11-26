@@ -1,0 +1,44 @@
+{
+  "team": [
+    {
+      "id": "yulia-kuvshinskaya",
+      "name": "Юлия Михайловна Кувшинская",
+      "email": "ykuvshinskaya@hse.ru",
+      "role": "leader",
+      "photo": "yulia-kuvshinskaya.jpg",
+      "tasks": "Идейный вдохновитель и куратор проекта"
+    },
+    {
+      "id": "elena-kartova",
+      "name": "Елена Картова",
+      "email": "",
+      "role": "author",
+      "photo": "",
+      "articles": ["upotreblenie-diskursivnogo-slova-kstati"]
+    },
+    {
+      "id": "yulia-danilova",
+      "name": "Юлия Данилова",
+      "email": "yusdanilova@edu.hse.ru",
+      "role": "author",
+      "photo": "yulia-danilova.jpg",
+      "articles": ["upotreblenie-mestoimenij-s-chasticej-to"]
+    },
+    {
+      "id": "anastasia-saunina",
+      "name": "Анастасия Саунина",
+      "email": "aasaunina@edu.hse.ru",
+      "role": "author",
+      "photo": "anastasia-saunina.jpg",
+      "articles": ["mne-ili-dlya-menya-datelnyj-padezh-ili-predlog-dlya"]
+    },
+    {
+      "id": "anna-lutsenko",
+      "name": "Анна Луценко",
+      "email": "aklutsenko@edu.hse.ru",
+      "role": "developer",
+      "photo": "anna-lutsenko.jpeg",
+      "tasks": "Специалист по разработке и сопровождению пользовательского интерфейса"
+    }
+  ]
+}

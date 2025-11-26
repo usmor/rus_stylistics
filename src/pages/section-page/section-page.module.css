@@ -1,0 +1,70 @@
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.63rem, -0.05rem + 3.01vw, 1.88rem);
+}
+
+.sectionTitle {
+  font-weight: 600;
+  font-size: clamp(1.38rem, 0.63rem + 3.31vw, 2.75rem);
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.sectionDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 75%;
+}
+
+.descriptionParagraph {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.descriptionList {
+  margin-inline-start: 20px;
+  list-style-position: outside;
+  list-style-type: "-";
+}
+
+.descriptionListItem {
+  padding-left: 5px;
+}
+
+.articlesBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 80%;
+}
+
+.subsetionTitle {
+  display: inline-block;
+  margin-block-end: 20px;
+  font-weight: 600;
+  font-size: clamp(1rem, 0.53rem + 2.11vw, 1.88rem);
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.articlesList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (width <= 768px) {
+  .sectionDescription {
+    width: 100%;
+  }
+
+  .articlesBlock {
+    width: 100%;
+  }
+
+  .descriptionParagraph {
+    font-size: 14px;
+  }
+}

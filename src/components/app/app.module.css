@@ -6,11 +6,11 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: 50px;
+  gap: clamp(1.88rem, 1.2rem + 3.01vw, 3.13rem);
   min-width: 60%;
   max-width: 1440px;
   min-height: 75vh;
-  margin-block: 50px;
+  margin-block: clamp(1.88rem, 1.2rem + 3.01vw, 3.13rem);
   margin-inline: clamp(1.57rem, 0.72rem + 3.77vw, 3.13rem);
 }
 

@@ -1,0 +1,52 @@
+.referencesSummaryIcon {
+  width: 24px;
+  height: 15px;
+  margin-inline-end: 15px;
+}
+
+.references[open] .referencesSummaryIcon {
+  transform: rotate(180deg);
+  opacity: 0.4;
+
+  /* stylelint-disable-next-line declaration-property-value-no-unknown */
+  transition: transform opacity;
+}
+
+.referencesSummary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+
+.referencesSummary::-webkit-details-marker {
+  display: none;
+}
+
+.referencesSummaryTitle {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.referencesList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-block-start: 10px;
+  margin-inline-start: 50px;
+  list-style-type: none;
+}
+
+@media (width < 768px) {
+  .referencesSummaryIcon {
+    width: 15px;
+    height: 10px;
+  }
+
+  .referencesSummaryTitle {
+    font-size: 16px;
+  }
+}

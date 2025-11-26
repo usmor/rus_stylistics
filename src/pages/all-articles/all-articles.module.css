@@ -1,0 +1,101 @@
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.pageTitle {
+  font-weight: 600;
+  font-size: clamp(1.38rem, 0.63rem + 3.31vw, 2.75rem);
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.text {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.letterSection {
+  width: 80%;
+}
+
+.articlesList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-block-start: clamp(0.75rem, 0.48rem + 1.21vw, 1.25rem);
+}
+
+.letterTitle {
+  font-weight: 600;
+  font-size: clamp(1rem, 0.53rem + 2.11vw, 1.88rem);
+  line-height: 1.2;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-end;
+  gap: 20px;
+  margin-top: auto;
+}
+
+.pageNumbers {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.paginationButton {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.paginationButton:hover {
+  color: var(--grey);
+}
+
+.paginationButton:focus {
+  outline: none;
+}
+
+.paginationButton:focus-visible {
+  color: var(--violet);
+  outline: none;
+}
+
+.buttonIcon {
+  width: clamp(1.75rem, 1.48rem + 1.21vw, 2.25rem);
+  fill: currentcolor;
+}
+
+.pageNumber {
+  color: rgb(0 0 0 / 30%);
+  font-weight: 600;
+  font-size: clamp(2rem, 1.59rem + 1.81vw, 2.75rem);
+  line-height: 1.2;
+}
+
+.activePage {
+  color: var(--black);
+  pointer-events: none;
+}
+
+@media (width <= 768px) {
+  .letterSection {
+    width: 100%;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+}

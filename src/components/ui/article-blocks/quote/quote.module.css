@@ -1,0 +1,47 @@
+.quoteBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-inline: 50px;
+  margin-block: 0 20px;
+  padding-inline: 16px 5px;
+  padding-block: 5px;
+  font-weight: 400;
+  font-size: clamp(0.75rem, 0.61rem + 0.6vw, 1rem);
+  line-height: 1.32;
+  border-inline-start: 5px solid var(--bq-border-color);
+}
+
+.quoteContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.quoteText {
+  flex: 1;
+  margin: 0;
+  font-style: italic;
+}
+
+.quoteNumber {
+  flex-shrink: 0;
+  font-size: clamp(0.75rem, 0.61rem + 0.6vw, 1rem);
+  font-style: normal;
+}
+
+.quoteSource {
+  color: rgb(0 0 0 / 50%);
+  font-size: clamp(0.75rem, 0.61rem + 0.6vw, 1rem);
+  font-style: normal;
+  text-align: right;
+}
+
+@media (width < 768px) {
+  .quoteBlock {
+    margin-inline: 20px;
+    padding-inline-start: 12px;
+    padding-block: 3px;
+    font-size: 14px;
+  }
+}

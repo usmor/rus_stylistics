@@ -5,15 +5,21 @@ import "./styles/globals.css";
 import "./styles/font.css";
 
 import App from "./components/app/app";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { store } from "./services/store";
 
 const container = document.getElementById("root") as HTMLElement;
 const root = ReactDOMClient.createRoot(container!);
 
 root.render(
   <React.StrictMode>
-    <Router basename={process.env.PUBLIC_PATH ? process.env.PUBLIC_PATH : "/"}>
-      <App />
-    </Router>
+    <Provider store={store}>
+      <HashRouter
+        basename={process.env.PUBLIC_PATH ? process.env.PUBLIC_PATH : "/"}
+      >
+        <App />
+      </HashRouter>
+    </Provider>
   </React.StrictMode>,
 );
