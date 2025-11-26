@@ -1,5 +1,7 @@
 {
   "rewrites": [
+    { "source": "/yandex_*.html", "destination": "/yandex_*.html" },
+    { "source": "/google*.html", "destination": "/google*.html" },
     {
       "source": "/(.*)",
       "destination": "/index.html"
