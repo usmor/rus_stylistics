@@ -14,7 +14,7 @@
 
 .headingItem {
   margin-inline-start: clamp(0.94rem, 0.43rem + 2.26vw, 1.88rem);
-  font-size: clamp(0.75rem, 0.61rem + 0.6vw, 1rem);
+  font-size: 16px;
   line-height: 1.32;
   text-transform: lowercase;
 }
@@ -49,5 +49,9 @@
     z-index: 0;
     margin-top: 25px;
     margin-left: 20px;
+  }
+
+  .headingItem {
+    font-size: 14px;
   }
 }

@@ -37,15 +37,15 @@
 }
 
 .memberInfoName {
-  margin-block-end: clamp(0.63rem, 0.29rem + 1.5vw, 1.25rem);
   font-weight: 600;
-  font-size: clamp(1.13rem, 0.69rem + 2vw, 1.88rem);
+  font-size: 30px;
   font-style: normal;
   line-height: 1.2;
 }
 
 .memberInfoContact {
   display: inline-block;
+  color: rgb(0 0 0 / 50%);
   font-size: clamp(0.88rem, 0.79rem + 0.37vw, 1.13rem);
   font-style: normal;
   line-height: 1.2;
@@ -76,13 +76,13 @@
 
 .tasks {
   margin-block-start: clamp(1.25rem, 0.57rem + 3.01vw, 2.5rem);
-  font-size: clamp(0.88rem, 0.79rem + 0.37vw, 1.13rem);
+  font-size: 16px;
 }
 
 .articlesListTitle {
   margin-block: clamp(1.25rem, 0.57rem + 3.01vw, 2.5rem) 20px;
   font-weight: 600;
-  font-size: clamp(1rem, 0.86rem + 0.62vw, 1.25rem);
+  font-size: 24px;
   font-style: normal;
   line-height: 1.2;
 }
@@ -94,7 +94,7 @@
 }
 
 .articleLink {
-  font-size: clamp(0.88rem, 0.79rem + 0.37vw, 1.13rem);
+  font-size: 16px;
   font-style: normal;
   line-height: 1.2;
   text-decoration: none;
@@ -181,6 +181,28 @@
   .memberContainer {
     width: 100%;
   }
+
+  .articlesListTitle {
+    font-size: 20px;
+  }
+}
+
+@media (width < 768px) {
+  .memberInfoName {
+    font-size: 21px;
+  }
+
+  .articleLink {
+    font-size: 14px;
+  }
+
+  .tasks {
+    font-size: 14px;
+  }
+
+  .articlesListTitle {
+    font-size: 14px;
+  }
 }
 
 @media (width <= 425px) {
@@ -189,8 +211,8 @@
     padding: 10px;
   }
 
-  .memberInfoContact {
-    margin-block: 10px;
+  .memberInfoName {
+    font-size: 18px;
   }
 }
 

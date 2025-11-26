@@ -39,6 +39,14 @@
       "role": "developer",
       "photo": "anna-lutsenko.jpeg",
       "tasks": "Специалист по разработке и сопровождению пользовательского интерфейса"
+    },
+    {
+      "id": "anastasia-goncharova",
+      "name": "Анастасия Гончарова",
+      "email": "Telegram: @avg_reu",
+      "role": "developer",
+      "photo": "",
+      "tasks": "Веб-дизайнер проекта"
     }
   ]
 }

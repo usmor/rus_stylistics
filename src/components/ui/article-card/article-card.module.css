@@ -38,7 +38,7 @@
   display: inline-block;
   max-width: 80%;
   margin-block: 10px clamp(1.25rem, 0.91rem + 1.51vw, 1.88rem);
-  font-size: clamp(0.75rem, 0.61rem + 0.6vw, 1rem);
+  font-size: 16px;
   text-wrap: wrap;
 }
 
@@ -50,7 +50,7 @@
 
 .tag {
   color: rgb(0 0 0 / 50%);
-  font-size: clamp(0.75rem, 0.61rem + 0.6vw, 1rem);
+  font-size: 16px;
   line-height: 1.2;
   text-decoration: none;
   text-wrap: nowrap;
@@ -68,6 +68,14 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  .articleAuthor {
+    font-size: 14px;
+  }
+
+  .tag {
+    font-size: 14px;
   }
 }
 

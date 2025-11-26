@@ -1,4 +1,10 @@
 .paragraph {
-  font-size: clamp(0.75rem, 0.61rem + 0.6vw, 1rem);
+  font-size: 16px;
   line-height: 1.32;
+}
+
+@media (width < 768px) {
+  .paragraph {
+    font-size: 14px;
+  }
 }
