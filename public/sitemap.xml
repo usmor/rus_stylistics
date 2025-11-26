@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Главные страницы -->
+  <url>
+    <loc>https://rus-stylistics.vercel.app/</loc>
+    <lastmod>2025-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://rus-stylistics.vercel.app/team</loc>
+    <lastmod>2025-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://rus-stylistics.vercel.app/all-articles</loc>
+    <lastmod>2025-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://rus-stylistics.vercel.app/sections/lexicon</loc>
+    <lastmod>2025-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://rus-stylistics.vercel.app/sections/grammar-forms</loc>
+    <lastmod>2025-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://rus-stylistics.vercel.app/sections/syntax</loc>
+    <lastmod>2025-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://rus-stylistics.vercel.app/search</loc>
+    <lastmod>2025-11-26</lastmod>
+  </url>
+
+  <!-- Статьи -->
+  <url>
+    <loc>https://rus-stylistics.vercel.app/articles/upotreblenie-diskursivnogo-slova-kstati</loc>
+    <lastmod>2025-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://rus-stylistics.vercel.app/articles/upotreblenie-mestoimenij-s-chasticej-to</loc>
+    <lastmod>2025-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://rus-stylistics.vercel.app/articles/mne-ili-dlya-menya-datelnyj-padezh-ili-predlog-dlya</loc>
+    <lastmod>2025-11-26</lastmod>
+  </url>
+</urlset>
