@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rus-stylistics.vercel.app/sitemap.xml
