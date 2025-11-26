@@ -5,7 +5,7 @@ import "./styles/globals.css";
 import "./styles/font.css";
 
 import App from "./components/app/app";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./services/store";
 
@@ -15,11 +15,11 @@ const root = ReactDOMClient.createRoot(container!);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <HashRouter
+      <BrowserRouter
         basename={process.env.PUBLIC_PATH ? process.env.PUBLIC_PATH : "/"}
       >
         <App />
-      </HashRouter>
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>,
 );
