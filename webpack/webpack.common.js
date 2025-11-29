@@ -100,6 +100,7 @@ module.exports = {
         background: "#ddd",
         theme_color: "#333",
         icons: {
+          favicons: true,
           coast: false,
           yandex: false,
           windows: false,
