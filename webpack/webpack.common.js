@@ -102,11 +102,11 @@ module.exports = {
         icons: {
           favicons: true,
           coast: false,
-          yandex: false,
+          yandex: true,
           windows: false,
           android: false,
           firefox: false,
-          appleIcon: false,
+          appleIcon: true,
           appleStartup: false,
         },
       },
