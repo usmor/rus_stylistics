@@ -1,4 +1,3 @@
-import storybook from "eslint-plugin-storybook";
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import prettier from "eslint-plugin-prettier";
 import react from "eslint-plugin-react";
@@ -28,7 +27,6 @@ export default {
     import: importPlugin,
     "jsx-a11y": jsxA11y,
     "eslint-comments": eslintComments,
-    storybook: storybook,
   },
   extends: [
     "plugin:@typescript-eslint/recommended",
@@ -56,7 +54,6 @@ export default {
     "node_modules/**/*",
     "public/**/*",
     "eslint.config.js",
-    "storybook-static/**/*",
     "build/**/*",
     "dist/**/*",
     "webpack/*.js",
