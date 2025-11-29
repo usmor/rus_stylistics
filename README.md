@@ -16,8 +16,6 @@ Handbook of Practical Stylistics of the Russian Language
 
 **Code Quality**: ESLint, Prettier, Stylelint
 
-**Документация**: Storybook
-
 ## Архитектура
 
 ```
@@ -61,8 +59,6 @@ npm run build
 # Проверка качества кода
 npm run check
 
-# Запуск Storybook
-npm run storybook
 ```
 
 ## Команда проекта
